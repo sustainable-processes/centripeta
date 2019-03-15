@@ -1,0 +1,135 @@
+{
+    "ios": [
+        {
+            "port": "/dev/ttyACM0"
+        },
+        {
+            "port": "/dev/ttyACM1"
+        },
+        {
+            "port": "/dev/ttyACM2"
+        },
+        {
+            "port": "/dev/ttyACM3"
+        },
+        {
+            "port": "/dev/ttyACM4"
+        }
+    ],
+    "devices": {
+        "dispenseWheel": {
+            "command_id": "wd",
+            "config": {
+                "reverted_switch": true,
+                "reverted_direction": true,
+                "enabled_acceleration": false,
+                "speed": 3000,
+                "max_speed": 3000,
+                "homing_speed": 12000,
+                "acceleration": 2000
+            }
+        },
+        "analysisWheel": {
+            "command_id": "a1d",
+            "config": {
+                "reverted_switch": true,
+                "reverted_direction": true,
+                "enabled_acceleration": false,
+                "speed": 3000,
+                "max_speed": 3000,
+                "homing_speed": 12000,
+                "acceleration": 2000
+            }
+        },
+        "horzpH": {
+            "command_id": "hpH",
+            "config": {
+                "reverted_switch": true,
+                "reverted_direction": true,
+                "enabled_acceleration": false,
+                "speed": 12000,
+                "max_speed": 12000,
+                "homing_speed": 12000,
+                "acceleration": 2000
+            }
+        },
+        "vertpH": {
+            "command_id": "vpH",
+            "config": {
+                "reverted_switch": true,
+                "reverted_direction": false,
+                "enabled_acceleration": false,
+                "speed": 12000,
+                "max_speed": 12000,
+                "homing_speed": 12000,
+                "acceleration": 2000
+            }
+        },
+        "horzCond": {
+            "command_id": "hcond",
+            "config": {
+                "reverted_switch": true,
+                "reverted_direction": true,
+                "enabled_acceleration": false,
+                "speed": 12000,
+                "max_speed": 12000,
+                "homing_speed": 12000,
+                "acceleration": 2000
+            }
+        },
+        "vertCond": {
+            "command_id": "vcond",
+            "config": {
+                "reverted_switch": true,
+                "reverted_direction": false,
+                "enabled_acceleration": false,
+                "speed": 12000,
+                "max_speed": 12000,
+                "homing_speed": 12000,
+                "acceleration": 2000
+            }
+        },
+        "horzVisc": {
+            "command_id": "hvisc",
+            "config": {
+                "reverted_switch": true,
+                "reverted_direction": true,
+                "enabled_acceleration": false,
+                "speed": 12000,
+                "max_speed": 12000,
+                "homing_speed": 12000,
+                "acceleration": 2000
+            }
+        },
+        "vertVisc": {
+            "command_id": "vvisc",
+            "config": {
+                "reverted_switch": true,
+                "reverted_direction": false,
+                "enabled_acceleration": false,
+                "speed": 12000,
+                "max_speed": 12000,
+                "homing_speed": 12000,
+                "acceleration": 2000
+            }
+        },
+        "vertTurb": {
+            "command_id": "vturb",
+            "config": {
+                "reverted_switch": true,
+                "reverted_direction": false,
+                "enabled_acceleration": false,
+                "speed": 12000,
+                "max_speed": 12000,
+                "homing_speed": 12000,
+                "acceleration": 2000
+            }
+        },
+        "a2Fans": {
+            "command_id": "a2fans"
+        },
+        "dryingFans": {
+            "command_id": "dfans"
+        }
+    }
+}

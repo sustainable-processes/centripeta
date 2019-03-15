@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "liwei_robot"
+version = "0.1.0"
+description = "A robot for chemistry!"
+authors = ["Your Name <you@example.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.6"
+commanduino = {git = "https://github.com/marcosfelt/commanduino"}
+
+[tool.poetry.dev-dependencies]
+jupyter = "^1.0"
+jupyterlab = "^0.35.4"
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
