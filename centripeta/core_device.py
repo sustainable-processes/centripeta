@@ -14,13 +14,7 @@ import time
 import inspect
 
 from commanduino import CommandManager
-
-HERE = os.path.dirname(os.path.abspath(inspect.getfile(inspect.currentframe())))
-
-root_path = os.path.join(HERE, "..", "..")
-sys.path.append(root_path)
-
-from utils import json_utils
+from centripeta.utils import json_utils
 
 """ CONSTANTS """
 DEVICES = "devices"
@@ -39,16 +33,21 @@ class CoreDevice(object):
     Allows access to the modules attached
 
     Args:
-        config (str): path to the Commanduino config file
+        config (Dict): Dictionary containing the configuration data.
+        name (str): Name of the device as specified in the config dictionary
     """
-    def __init__(self, config):
-        self.mgr = CommandManager.from_configfile(config)
-        self.config = json_utils.read_json(config)
+    def __init__(self, config, name):
+        self.mgr = CommandManager.from_config(config)
+        self.config = config
+        self._name = name
 
+    @property
+    def name(self):
+        return self._name
 
-    def valid_device(self, dev_name):
+    def _valid_device(self):
         """
-        Checks if the given device name is present within the config
+        Checks if the device name is present within the config
 
         Args:
             dev_name (str): name of the device
@@ -56,9 +55,9 @@ class CoreDevice(object):
         Returns:
             valid (bool): If the device is present or not
         """
-        return dev_name in self.config[DEVICES].keys()
+        return self.dev_name in self.config[DEVICES].keys()
 
-    def get_device_attribute(self, dev_name):
+    def get_device_attribute(self):
         """
         Gets the device attribute from CommandManager
 
@@ -71,12 +70,12 @@ class CoreDevice(object):
         Raises:
             AttributeError: The device is not in the CommandManager
         """
-        if self.valid_device(dev_name):
+        if self._valid_device():
             try:
-                return getattr(self.mgr, dev_name)
+                return getattr(self.mgr, self.name)
             except AttributeError:
-                print("No device named {0} in the manager!\nBailing out!".format(dev_name))
+                print("No device named {0} in the manager!\nBailing out!".format(self.name))
                 sys.exit(-1)
         else:
-            print("Invalid device name: {0}".format(dev_name))
+            print("Invalid device name: {0}".format(self.name))
             sys.exit(-1)
