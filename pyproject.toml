@@ -7,6 +7,7 @@ authors = ["Your Name <you@example.com>"]
 [tool.poetry.dependencies]
 python = "^3.6"
 commanduino = {git = "https://github.com/marcosfelt/commanduino"}
+pycont = {git = "https://github.com/croningp/pycont"}
 
 [tool.poetry.dev-dependencies]
 jupyter = "^1.0"

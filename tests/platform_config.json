@@ -14,6 +14,18 @@
         },
         {
             "port": "/dev/ttyACM4"
+        },
+        {
+            "port": "/dev/cu.usbserial-FT2ISF2K"
+        },
+        {
+            "port": "/dev/tty.usbserial-FT2ISF2K"
+        },
+        {
+            "port": "/dev/cu.usbmodem141411"
+        },
+        {
+            "port": "/dev/tty.usbmodem141411"
         }
     ],
     "devices": {

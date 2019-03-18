@@ -55,7 +55,7 @@ class CoreDevice(object):
         Returns:
             valid (bool): If the device is present or not
         """
-        return self.dev_name in self.config[DEVICES].keys()
+        return self.name in self.config[DEVICES].keys()
 
     def get_device_attribute(self):
         """
