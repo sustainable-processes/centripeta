@@ -1,0 +1,33 @@
+{
+    "io": {
+        "port": "/dev/ttyUSB0",
+        "baudrate": 9600,
+        "timeout": 1
+    },
+    "default": {
+        "volume": 5,
+        "micro_step_mode": 2,
+        "top_velocity": 6000,
+        "initialize_valve_position": "I"
+    },
+    "groups": {
+        "cleaning": ["sample", "water", "acetone"]
+    },
+    "pumps": {
+        "sample": {
+            "switch": "0",
+            "volume": 12.5,
+            "top_velocity": 12000
+        },
+        "water": {
+            "switch": "1",
+            "volume": 12.5,
+            "top_velocity": 12000
+        },
+        "acetone": {
+            "switch": "2",
+            "volume": 12.5,
+            "top_velocity": 12000
+        }
+    }
+}

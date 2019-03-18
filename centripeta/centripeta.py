@@ -18,7 +18,7 @@ sys.path.append(root_path)
 
 """ Operations Modules """
 # Add more as required
-from operations.triconts.tricont_control import TricontControl
+from triconts.tricont_control import TricontControl
 from operations.wheel.wheel_control import WheelControl
 from operations.camera.camera_control import CameraControl
 
@@ -30,22 +30,22 @@ WHEEL_CONFIG = os.path.join(OP_CONFIGS, "platform_config.json")
 WHEEL_TURN = 1
 
 
-class Manager(object):
+class Centripeta:
     """
     Class representing a manager which governs the entire platform
     Wrapper around certain operations for the platform and general management
 
     """
-    def __init__(self):
+    def __init__(self, wheel, pumps=None):
 
         # Initialise the camera
-        self.camera = CameraControl()
+        # self.camera = CameraControl()
 
         # Initialise the tricont pumps
-        self.triconts = TricontControl()
+        self.pumps = pumps
 
         # Initialise the Wheel system
-        self.wheel = WheelControl(WHEEL_CONFIG)
+        self.wheel = wheel
 
         # Initialise the logging module
         self.logger = Logger()
