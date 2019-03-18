@@ -3,7 +3,7 @@
     :platform: Unix
     :synopsis: Module for managing the Operational layer components
 
-.. moduleauthor:: Graham Keenan <https://github.com/ShinRa26>
+.. moduleauthor:: Kobi Felton <https://github.com/marcosfelt>
 
 """
 
@@ -12,58 +12,41 @@ import sys
 import inspect
 import logging 
 
-HERE = os.path.dirname(os.path.abspath(inspect.getfile(inspect.currentframe())))
-root_path = os.path.join(HERE, "..")
-sys.path.append(root_path)
-
-""" Operations Modules """
 # Add more as required
-from triconts.tricont_control import TricontControl
-from operations.wheel.wheel_control import WheelControl
-from operations.camera.camera_control import CameraControl
-
-""" Constants """
-OP_CONFIGS = os.path.join(HERE, "operations", "configs")
-WHEEL_CONFIG = os.path.join(OP_CONFIGS, "platform_config.json")
-
-# Numeric constants
-WHEEL_TURN = 1
-
+from pycont.controller import MultiPumpController
+from .wheel_control import WheelControl
 
 class Centripeta:
+    def __init__(self):
+        pass
+
+class Dispenser(Centripeta):
     """
-    Class representing a manager which governs the entire platform
-    Wrapper around certain operations for the platform and general management
+    Control of a dispensing wheel that has an arbitrary number of pumps connected.
+
+    Attributes:
+        wheel (centripeta.WheelControl): A WheelControl object from centripeta
+        pumps (pycont.controller.MultiPumpController): A MultiPumpController object for all the pump
+            connected to the wheel
 
     """
-    def __init__(self, wheel, pumps=None):
+    def __init__(self, wheel: WheelControl, pumps: MultiPumpController=None):
 
         # Initialise the camera
         # self.camera = CameraControl()
 
-        # Initialise the tricont pumps
+        # Initialise the tricontinental pumps
         self.pumps = pumps
+        self.pumps.smart_initialize()
 
         # Initialise the Wheel system
         self.wheel = wheel
 
-        # Initialise the logging module
-        self.logger = Logger()
-
-    def dispense(self, wheel_name, reagents):
-        """
-        Dispenses reagents into a vial and rotates the wheel
-
-        Args:
-            reagents (Dict): Dictionary containing the pump names and values
-        """
-        for pump, vol in reagents.keys():
-            self.triconts.transfer(pump, vol)
-
-        self.turn_wheel(wheel_name, WHEEL_TURN)
+        # # Initialise the logging module
+        # self.logger = Logger())
 
 
-    def dispense_single_reagent(self, name, volume):
+    def dispense(self, pump_name, volume):
         """
         Dispenses a single reagent from the pump
 
@@ -71,27 +54,16 @@ class Centripeta:
             name (str): Name of the reagent pump
             volume (int/float): Volume to dispense
         """
-        self.triconts.transfer(name, volume)
+        self.pumps[pump_name].transfer(volume, 'I', 'O')
 
-    
-    def turn_wheel(self, wheel_name, n_turns):
+    def turn_wheel(self, n_turns):
         """
-        Turns the wheel n_turns times
-
-        Args:
-            n_turns (int): Number of times to turn the wheel
-        """
-        self.wheel.turn_wheel(wheel_name, n_turns)
-
-    
-    def log(self, msg):
-        """
-        Logs a message using the logger
+        Turn the wheeel n_turns
 
         Args:
-            msg (str): Message to log
+            n_turns (int): Number of turns to rotate the wheel
         """
-        self.logger.info(msg)
+        self.wheel.turn(n_turns, wait=True)
 
 
 

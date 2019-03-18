@@ -1,41 +1,64 @@
-#!/usr/bin/python3
-from email.message import EmailMessage
-from smtplib import SMTP
+import sendgrid
+import os
 
-def send_email(subject, body, mail_to, mail_from, smtp_server, smtp_port, smtp_user, smtp_pass, tls=False):
-    """Simple function to send e-mail notifications with Python smtplib
+class Notifier:
+    ''' Class for sending notifications about notebooks/scripts
     
-    Arguments:
-        subject {str} -- Message subject
-        body {str} -- Message body
-        mail_to {str} -- Recipient address. Multiple addresses separated by comma also work
-        mail_from {str} -- Sender address
-        smtp_server {str} -- SMTP server address/name
-        smtp_port {str} -- SMTP port (defaults to 25).
-        smtp_user {str} -- Username, if SMTP server requires authentication
-        smtp_pass {str} -- Password, if SMTP server requires authentication
-    
-    Keyword Arguments:
-        tls {bool} -- Whether to use TLS connection with STARTTLS method (default: {False})
-    """
-    # Create email message & fuck sanity checks
-    msg = EmailMessage()
-    msg["From"] = mail_from
-    msg["To"] = mail_to
-    msg["Subject"] = subject
-    msg.set_content(body)
+    Attributes
+    ---------- 
+    email: `str`
+         Email neeed for sending keys
+    key: `str``
+        Sendgrid API key. By default this will be pulled from the environmental
+        variable SENGRID_API_KEY
+    Example
+    -------
+    from sre_tools import Notifier
+    from time import sleep
+    n = Notifier(email='joe@none.com')
+    delay = 60
+    time.sleep(delay)
+    n.notification(subject=f'Email sent after {delay} seconds.')
+    ''' 
+    def __init__(self, email, key=None):
+        self.sg = sendgrid.SendGridAPIClient(apikey=os.environ.get('SENGRID_API_KEY', key))
+        self._email = email
+        self._check_valid_email(self._email)
 
-    # Send message
-    server = SMTP(smtp_server, smtp_port)
-    if tls is True:
-        server.starttls()
-    if smtp_user != "":
-        server.login(smtp_user, smtp_pass)
-    server.sendmail(mail_from, mail_to, msg.as_string())
-    server.quit() 
+    def notification(self, subject=None):
+        ''' Send a notification 
+        
+        Parameters
+        ---------- 
+        subject: `str` (optional)
+            Subject of the email. If left blank will default "Your job is complete."
+        ''' 
+        # TO:DO Replace with something like noreply@sre.ceb.cam.ac.uk
+        from_email = Email("noreply@sre.ceb.cam.ac.uk")
+        to_email = Email(self.email)
+        if subject:
+            pass
+        else:
+            subject = "Your job is complete"
+        content = Content("text/plain", "Please see hub.cam.ac.uk for more information")
+        mail = Mail(from_email, subject, to_email, content)
+        response = self.sg.client.mail.send.post(request_body=mail.get())
 
-def make_mailer(default_mail_to, default_mail_from="croningp-platforms@chem.gla.ac.uk", default_smtp_server="smtp.chem.gla.ac.uk", default_smtp_port="25", default_smtp_user="", default_smtp_pass="", use_tls=False):
-    """Simple factory to create send_email() instances with default arguments set"""
-    def wrapper(subject, body):
-        send_email(subject, body, mail_to=default_mail_to, mail_from=default_mail_from, smtp_server=default_smtp_server, smtp_port=default_smtp_port, smtp_user=default_smtp_user, smtp_pass=default_smtp_pass, tls=use_tls)
-    return wrapper
+    def _check_valid_email(self, email):
+        ''' Check if a string is formatted as an email'''
+        m = re.search(r"(^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$)", email)
+        if m.group(0):
+            return
+        else:
+            raise ValueError("Please pass a valid email")
+
+    @property
+    def email(self):
+        '''Return the email being used by notifier'''
+        return self._email
+
+    @email.setter
+    def email(self, email):
+        '''Set the email being used by notifier'''
+        self._check_valid_email(email)
+        self._email = email
