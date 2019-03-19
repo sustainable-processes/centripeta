@@ -31,8 +31,8 @@ class WheelControl(CoreDevice):
     Args:
         config (str): Dictionary contianing the configuration data.
     """
-    def __init__(self, config, wheel_name):
-        CoreDevice.__init__(self, config, wheel_name)
+    def __init__(self, config, name):
+        CoreDevice.__init__(self, config, name)
         if not self.mgr.devices:
             raise CommanduinoInitError("No devices found in the manager")
 

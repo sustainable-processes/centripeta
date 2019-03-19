@@ -1,3 +1,3 @@
 from .wheel_control import WheelControl
 
-from .centripeta import Centripetas
+from .centripeta import Centripeta, Dispenser

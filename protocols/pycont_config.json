@@ -1,8 +1,8 @@
 {
     "io": {
-        "port": "/dev/ttyUSB0",
+        "port": "/dev/tty.usbserial-FT2ISF2K",
         "baudrate": 9600,
-        "timeout": 1
+        "timeout": 3
     },
     "default": {
         "volume": 5,
@@ -16,16 +16,6 @@
     "pumps": {
         "sample": {
             "switch": "0",
-            "volume": 12.5,
-            "top_velocity": 12000
-        },
-        "water": {
-            "switch": "1",
-            "volume": 12.5,
-            "top_velocity": 12000
-        },
-        "acetone": {
-            "switch": "2",
             "volume": 12.5,
             "top_velocity": 12000
         }

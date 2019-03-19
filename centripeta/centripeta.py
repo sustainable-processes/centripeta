@@ -36,8 +36,9 @@ class Dispenser(Centripeta):
         # self.camera = CameraControl()
 
         # Initialise the tricontinental pumps
-        self.pumps = pumps
-        self.pumps.smart_initialize()
+        self._mgr = pumps
+        self._mgr.smart_initialize()
+        self.pumps = self._mgr.pumps 
 
         # Initialise the Wheel system
         self.wheel = wheel
@@ -54,7 +55,8 @@ class Dispenser(Centripeta):
             name (str): Name of the reagent pump
             volume (int/float): Volume to dispense
         """
-        self.pumps[pump_name].transfer(volume, 'I', 'O')
+        self.pumps[pump_name].pump(volume, 'I')
+        self.pumps[pump_name].deliver(volume, 'O')
 
     def turn_wheel(self, n_turns):
         """

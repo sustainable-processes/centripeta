@@ -60,13 +60,13 @@ class Logger(object):
             logger (Logger): Logger object
         """
         logger = logging.getLogger(PLATFORM_NAME)
-        logger.setLevel(logging.INFO)
+        logger.setLevel(logging.DEBUG)
 
         fh = logging.FileHandler(filename=logfile)
-        fh.setLevel(logging.INFO)
+        fh.setLevel(logging.DEBUG)
 
         ch = logging.StreamHandler()
-        ch.setLevel(logging.INFO)
+        ch.setLevel(logging.DEBUG)
 
         formatter = logging.Formatter("%(asctime)s - %(name)s::%(levelname)s -- %(message)s")
         ch.setFormatter(formatter)
