@@ -15,6 +15,7 @@ import logging
 # Add more as required
 from pycont.controller import MultiPumpController
 from .wheel_control import WheelControl
+from commanduino import CommandManager
 
 class Centripeta:
     def __init__(self):
@@ -66,6 +67,3 @@ class Dispenser(Centripeta):
             n_turns (int): Number of turns to rotate the wheel
         """
         self.wheel.turn(n_turns, wait=True)
-
-
-

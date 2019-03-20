@@ -20,6 +20,18 @@
         },
         {
             "port": "/dev/tty.usbmodem141411"
+        },
+        {
+            "port":"/dev/cu.usbmodem141411"
+        },
+        {
+            "port":"/dev/tty.usbmodem141441"
+        },
+        {
+            "port":"/dev/cu.usbmodem141431"
+        },
+        {
+            "port":"/dev/tty.usbmodem141431"
         }
     ],
     "devices": {
