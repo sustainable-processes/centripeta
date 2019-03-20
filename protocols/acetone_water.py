@@ -30,6 +30,6 @@ conditions = pd.read_csv('conditions/acetone_water_1.csv')
 for i, condition in conditions.iterrows():
     logging.info("{Dipsensing condition %s"%i)
     c.dispense(pump_name="sample", volume =condition['sample']) 
-    # c.dispense(pump_name="acetone", volume=conditions['acetone'])
-    # c.dispense(pump_name="water", volume=conditions['water'])
+    c.dispense(pump_name="acetone", volume=condition['acetone'])
+    c.dispense(pump_name="water", volume=condition['water'])
     c.turn_wheel(n_turns=1)
