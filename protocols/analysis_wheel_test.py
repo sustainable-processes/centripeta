@@ -14,13 +14,8 @@ import logging
 logging.basicConfig(filename='log.txt', level=logging.INFO)
 logger = logging.getLogger(__name__)
 
-#Read in the configuration files
-with open('platform_config_simple.json', 'r') as f:
-    config = json.load(f)
-
-w = WheelControl(config=config, name="analysisWheel")
-steppers = CommandManager.from_config(config)
-c = Analyzer(wheel=w, steppers=steppers)
+mgr = CommandManager.from_configfile('platform_config_simple.json')
+c = Analyzer(mgr)
 
 # c.turn_wheel(n_turns=5)
 print("turning wheel")

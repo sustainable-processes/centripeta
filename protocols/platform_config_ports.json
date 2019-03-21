@@ -1,0 +1,29 @@
+{
+    "ios": [
+        {
+            "port": "/dev/cu.usbmodem141411"
+        },
+        {
+            "port": "/dev/tty.usbmodem141411"
+        },
+        {
+            "port":"/dev/cu.usbmodem141411" 
+
+        },
+        {
+            "port":"/dev/tty.usbmodem141441"
+        },
+        {
+            "port":"/dev/cu.usbmodem141431"
+        },
+        {
+            "port":"/dev/tty.usbmodem141431"
+        },
+        {
+            "port": "/dev/cu.usbserial-FT2ISF2K"
+        },
+        {
+            "port": "/dev/tty.usbserial-FT2ISF2K"
+        }
+    ]
+}

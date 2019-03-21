@@ -1,38 +1,5 @@
 {
-    "ios": [
-        {
-            "port": "/dev/cu.usbmodem141411"
-        },
-        {
-            "port": "/dev/tty.usbmodem141411"
-        },
-        {
-            "port":"/dev/cu.usbmodem141411" 
-
-        },
-        {
-            "port":"/dev/tty.usbmodem141441"
-        },
-        {
-            "port":"/dev/cu.usbmodem141431"
-        },
-        {
-            "port":"/dev/tty.usbmodem141431"
-        }
-    ],
     "devices": {
-        "dispense_wheel": {
-            "command_id": "wd",
-            "config": {
-                "reverted_switch": true,
-                "reverted_direction": true,
-                "enabled_acceleration": false,
-                "speed": 3000,
-                "max_speed": 3000,
-                "homing_speed": 12000,
-                "acceleration": 2000
-            }
-        },
         "analysis_wheel": {
             "command_id": "a1d",
             "config": {

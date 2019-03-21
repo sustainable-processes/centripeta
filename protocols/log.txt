@@ -28,3 +28,11 @@ INFO:commanduino.CommandManager:Device "analysisWheel" with id "a1d" and of type
 WARNING:commanduino.CommandManager:Received unknown command "?,hpH"
 INFO:commanduino.CommandManager:Device "horzpH" with id "hpH" and of type "LINEARACCELSTEPPER" found in 0.01s
 INFO:commanduino.CommandManager:Device "horzpH" with id "hpH" and of type "LINEARACCELSTEPPER" found in the register, creating it
+WARNING:commanduino.CommandManager:Port /dev/cu.usbmodem141411 was not found
+WARNING:commanduino.CommandManager:Port /dev/tty.usbmodem141411 was not found
+WARNING:commanduino.CommandManager:Port /dev/cu.usbmodem141411 was not found
+INFO:commanduino.CommandManager:Found CommandManager on port "/dev/tty.usbmodem141441", init time was 1.007 seconds
+INFO:commanduino.CommandManager:Found CommandManager on port "/dev/cu.usbmodem141431", init time was 1.008 seconds
+WARNING:commanduino.CommandManager:Port /dev/tty.usbmodem141431 was not found
+WARNING:commanduino.CommandManager:CommandManager on port "/dev/cu.usbserial-FT2ISF2K" has not initialized
+WARNING:commanduino.CommandManager:Port /dev/tty.usbserial-FT2ISF2K was not found

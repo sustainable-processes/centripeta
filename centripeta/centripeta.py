@@ -14,16 +14,16 @@ import logging
 
 # Add more as required
 from pycont.controller import MultiPumpController
-from .wheel_control import WheelControl
+from centripeta.utils import read_json
 from commanduino import CommandManager
 
-class Centripeta:
-    def __init__(self, *args, **kwargs):
-        pass
 
-    @classmethod
-    def from_config(cls, config):
-        return cls(config)
+class Centripeta:
+    def __init__(self, manager: CommandManager, devices_dict: dict):
+        self._mgr = manager
+        self._mgr.register_all_devices(devices_dict)
+        self._mgr.set_devices_as_attributes()
+
 
 class Dispenser(Centripeta):
     """
@@ -35,7 +35,7 @@ class Dispenser(Centripeta):
             connected to the wheel
 
     """
-    def __init__(self, wheel: WheelControl, pumps: MultiPumpController=None):
+    def __init__(self, wheel, pumps: MultiPumpController=None):
 
         # Initialise the camera
         # self.camera = CameraControl()
@@ -79,17 +79,19 @@ class Analyzer(Centripeta):
         wheel (centripeta.WheelControl): A WheelControl object from centripeta
     """
 
-    def __init__(self, wheel: WheelControl, steppers: CommandManager):
-        
+    def __init__(self, manager: CommandManager):
+        devices = read_json('configs/analyzer_config.json')
+
+        Centripeta.__init__(self, manager, devices)
         # Initialize the wheel system
         # self.wheel = wheel
 
-        # Initialize the linear accelsteppers
-        self.mgr = steppers
+        # # Initialize the linear accelsteppers
+        # self.mgr = steppers
 
-        self.horzpH = self.mgr.devices['horzpH']
-        # self.vertpH = self.mgr.devices['vertpH']
-        self.wheel = self.mgr.devices['Analysiswheel']
+        self.horz_ph = self._mgr.devices['horz_ph']
+        self.vert_ph = self._mgr.devices['vert_ph']
+        self.wheel = self._mgr.devices['analysis_wheel']
 
     def turn_wheel(self, n_turns):
         """
@@ -109,7 +111,7 @@ class Analyzer(Centripeta):
             wait (bool): Wait until the device is idle, defualt set to True
 
         """
-        self.horzpH.move_to(steps)
+        self.horz_ph.move_to(steps)
 
     def move_to(self, name, steps):
-        self.mgr.devices[name].move_to(steps)
+        self._mgr.devices[name].move_to(steps)

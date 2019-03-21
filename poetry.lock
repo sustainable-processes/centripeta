@@ -54,27 +54,26 @@ version = "0.4.1"
 
 [[package]]
 category = "main"
-description = "A library to interact with an arduino board running Arduino-CommandHandler and derivatives"
+description = ""
 name = "commanduino"
 optional = false
-python-versions = "*"
-version = "0.1"
+python-versions = "^3.6"
+version = "0.1.0"
 
 [package.dependencies]
-pyserial = "*"
+pyserial = "^3.4"
 
 [package.source]
-reference = "21babf4c11b86213b4a1045c1b14d965ed0c3afe"
+reference = "f5718c27fe451c4eefe006cb38320f4e463788a1"
 type = "git"
 url = "https://github.com/marcosfelt/commanduino"
-
 [[package]]
 category = "dev"
 description = "Better living through Python with decorators"
 name = "decorator"
 optional = false
 python-versions = ">=2.6, !=3.0.*, !=3.1.*"
-version = "4.3.2"
+version = "4.4.0"
 
 [[package]]
 category = "dev"
@@ -475,7 +474,6 @@ version = "0.9.6"
 reference = "20d678a652b8ada007f71b3cc8e5630604c861cf"
 type = "git"
 url = "https://github.com/croningp/pycont"
-
 [[package]]
 category = "dev"
 description = "Pygments is a syntax highlighting package written in Python."
@@ -692,7 +690,7 @@ backcall = ["38ecd85be2c1e78f77fd91700c76e14667dc21e2713b63876c0eb901196e01e4", 
 bleach = ["213336e49e102af26d9cde77dd2d0397afabc5a6bf2fed985dc35b5d1e285a16", "3fdf7f77adcf649c9911387df51254b813185e32b2c6619f690b593a617e19fa"]
 colorama = ["05eed71e2e327246ad6b38c540c4a3117230b19679b875190486ddd2d721422d", "f8ac84de7840f5b9c4e3347b3c1eaa50f7e49c2b07596221daec5edaabbd7c48"]
 commanduino = []
-decorator = ["33cd704aea07b4c28b3eb2c97d288a06918275dac0ecebdaf1bc8a48d98adb9e", "cabb249f4710888a2fc0e13e9a16c343d932033718ff62e1e9bc93a9d3a9122b"]
+decorator = ["86156361c50488b84a3f148056ea716ca587df2f0de1d34750d35c21312725de", "f069f3a01830ca754ba5258fde2278454a0b5b79e0d7f5c13b3b97e57d4acff6"]
 defusedxml = ["24d7f2f94f7f3cb6061acb215685e5125fbcdc40a857eff9de22518820b0a4f4", "702a91ade2968a82beb0db1e0766a6a273f33d4616a6ce8cde475d8e09853b20"]
 entrypoints = ["589f874b313739ad35be6e0cd7efde2a4e9b6fea91edcc34e58ecbb8dbe56d19", "c70dd71abe5a8c85e55e12c19bd91ccfeec11a6e99044204511f9ed547d48451"]
 ipykernel = ["0aeb7ec277ac42cc2b59ae3d08b10909b2ec161dc6908096210527162b53675d", "0fc0bf97920d454102168ec2008620066878848fcfca06c22b669696212e292f"]
