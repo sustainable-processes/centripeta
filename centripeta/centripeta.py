@@ -12,11 +12,13 @@ import sys
 import inspect
 import logging 
 
-# Add more as required
 from pycont.controller import MultiPumpController
 from centripeta.utils import read_json
 from commanduino import CommandManager
+import centripeta
 
+
+CONFIG_PATH = centripeta.__path__[0] + '/configs/'
 
 class Centripeta:
     def __init__(self, manager: CommandManager, devices_dict: dict):
@@ -80,15 +82,13 @@ class Analyzer(Centripeta):
     """
 
     def __init__(self, manager: CommandManager):
-        devices = read_json('configs/analyzer_config.json')
+        #Read in default device config
+        devices = read_json(CONFIG_PATH + 'analyzer_config.json')
 
+        #Initialize devices
         Centripeta.__init__(self, manager, devices)
-        # Initialize the wheel system
-        # self.wheel = wheel
 
-        # # Initialize the linear accelsteppers
-        # self.mgr = steppers
-
+        #
         self.horz_ph = self._mgr.devices['horz_ph']
         self.vert_ph = self._mgr.devices['vert_ph']
         self.wheel = self._mgr.devices['analysis_wheel']
