@@ -18,8 +18,12 @@ from .wheel_control import WheelControl
 from commanduino import CommandManager
 
 class Centripeta:
-    def __init__(self):
+    def __init__(self, *args, **kwargs):
         pass
+
+    @classmethod
+    def from_config(cls, config):
+        return cls(config)
 
 class Dispenser(Centripeta):
     """
@@ -61,9 +65,51 @@ class Dispenser(Centripeta):
 
     def turn_wheel(self, n_turns):
         """
-        Turn the wheeel n_turns
+        Turn the wheel n_turns
 
         Args:
             n_turns (int): Number of turns to rotate the wheel
         """
         self.wheel.turn(n_turns, wait=True)
+
+class Analyzer(Centripeta):
+    """
+    Control of a analysis wheel 
+    Attributes:
+        wheel (centripeta.WheelControl): A WheelControl object from centripeta
+    """
+
+    def __init__(self, wheel: WheelControl, steppers: CommandManager):
+        
+        # Initialize the wheel system
+        # self.wheel = wheel
+
+        # Initialize the linear accelsteppers
+        self.mgr = steppers
+
+        self.horzpH = self.mgr.devices['horzpH']
+        # self.vertpH = self.mgr.devices['vertpH']
+        self.wheel = self.mgr.devices['Analysiswheel']
+
+    def turn_wheel(self, n_turns):
+        """
+        Turn the wheel n_turns
+
+        Args:
+            n_turns (int): Number of turns to rotate the wheel
+        """
+        self.wheel.turn(n_turns, wait=True)
+    
+    def horzpH_move_to(self, steps, wait=True):
+        """
+        Move the stepmoter to a specific location
+
+        Args:
+            steps (int): The position to move to 
+            wait (bool): Wait until the device is idle, defualt set to True
+
+        """
+        self.horzpH.move_to(steps)
+
+    def move_to(self, name, steps):
+        self.mgr.devices[name].move_to(steps)

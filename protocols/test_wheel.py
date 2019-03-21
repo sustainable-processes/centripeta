@@ -6,15 +6,18 @@ import json
 with open('platform_config.json', 'r') as f:
     wheel_config = json.load(f)
 
+with open('platform_config_simple.json', 'r') as f:
+    platform_config = json.load(f)
+    
+steppers = CommandManager.from_config(platform_config)
+# w = WheelControl(config=wheel_config, name='analysisWheel')
+# w.turn(3)
 
-w = WheelControl(config=wheel_config, name='analysisWheel')
-w.turn(3)
 
-steppers = CommandManager.from_configfile('platform_config.json')
 
 horzpH = steppers.devices['horzpH']
 
-horzpH.set_current_position(0)
+horzpH.home()
 
 horzpH.move_to(10000)
 

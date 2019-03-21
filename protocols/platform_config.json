@@ -1,28 +1,14 @@
 {
     "ios": [
         {
-            "port": "/dev/ttyACM0"
-        },
-        {
-            "port": "/dev/ttyACM1"
-        },
-        {
-            "port": "/dev/ttyACM2"
-        },
-        {
-            "port": "/dev/ttyACM3"
-        },
-        {
-            "port": "/dev/ttyACM4"
-        },
-        {
             "port": "/dev/cu.usbmodem141411"
         },
         {
             "port": "/dev/tty.usbmodem141411"
         },
         {
-            "port":"/dev/cu.usbmodem141411"
+            "port":"/dev/cu.usbmodem141411" 
+
         },
         {
             "port":"/dev/tty.usbmodem141441"
