@@ -17,7 +17,7 @@ logger = logging.getLogger(__name__)
 mgr = CommandManager.from_configfile('platform_config_simple.json')
 c = Analyzer(mgr)
 
-# c.turn_wheel(n_turns=5)
+c.turn_wheel(n_turns=5)
 print("turning wheel")
 c.horzpH_move_to(steps=20000)
 

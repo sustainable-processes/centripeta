@@ -18,6 +18,10 @@ from commanduino import CommandManager
 import centripeta
 
 
+""" CONSTANTS """
+FULL_WHEEL_TURN = 6400
+PUMP_INCREMENT = 8000
+MODULE_LOWER = -39000
 CONFIG_PATH = centripeta.__path__[0] + '/configs/'
 
 class Centripeta:
@@ -81,26 +85,27 @@ class Analyzer(Centripeta):
         wheel (centripeta.WheelControl): A WheelControl object from centripeta
     """
 
-    def __init__(self, manager: CommandManager):
+    def __init__(self, manager: CommandManager=CommandManager(get_all_serial_ports)):
         #Read in default device config
         devices = read_json(CONFIG_PATH + 'analyzer_config.json')
 
         #Initialize devices
-        Centripeta.__init__(self, manager, devices)
+        Centripeta.__init__(self, manager, devices['devices'])
 
         #
         self.horz_ph = self._mgr.devices['horz_ph']
         self.vert_ph = self._mgr.devices['vert_ph']
         self.wheel = self._mgr.devices['analysis_wheel']
 
-    def turn_wheel(self, n_turns):
+    def turn_wheel(self, n_turns, wait=True):
         """
         Turn the wheel n_turns
 
         Args:
             n_turns (int): Number of turns to rotate the wheel
         """
-        self.wheel.turn(n_turns, wait=True)
+        for _ in range(n_turns):
+            self.wheel.move(FULL_WHEEL_TURN, wait=wait)
     
     def horzpH_move_to(self, steps, wait=True):
         """
@@ -115,3 +120,7 @@ class Analyzer(Centripeta):
 
     def move_to(self, name, steps):
         self._mgr.devices[name].move_to(steps)
+
+
+def get_all_serial_ports():
+    pass
