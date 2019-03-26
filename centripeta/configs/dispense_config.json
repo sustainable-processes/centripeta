@@ -1,0 +1,15 @@
+{"devices": {
+    "dispense_wheel": {
+        "command_id": "wd",
+        "config": {
+            "reverted_switch": true,
+            "reverted_direction": true,
+            "enabled_acceleration": false,
+            "speed": 3000,
+            "max_speed": 3000,
+            "homing_speed": 12000,
+            "acceleration": 2000
+        }
+    }
+}
+}

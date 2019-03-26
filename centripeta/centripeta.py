@@ -41,18 +41,27 @@ class Dispenser(Centripeta):
             connected to the wheel
 
     """
-    def __init__(self, wheel, pumps: MultiPumpController=None):
+    def __init__(self, manager:CommandManager, pumps: MultiPumpController=None):
 
         # Initialise the camera
         # self.camera = CameraControl()
 
+        #Read in default device config
+        devices = read_json(CONFIG_PATH + 'dispense_config.json')
+
+        #Initialize devices
+        Centripeta.__init__(self, manager, devices['devices'])
+
+        # Initialise the Wheel system
+        # self.wheel = wheel
+        self.wheel = self._mgr.devices['dispense_wheel']
+        
         # Initialise the tricontinental pumps
         self._mgr = pumps
         self._mgr.smart_initialize()
         self.pumps = self._mgr.pumps 
 
-        # Initialise the Wheel system
-        self.wheel = wheel
+
 
         # # Initialise the logging module
         # self.logger = Logger())
@@ -69,14 +78,17 @@ class Dispenser(Centripeta):
         self.pumps[pump_name].pump(volume, 'I')
         self.pumps[pump_name].deliver(volume, 'O')
 
-    def turn_wheel(self, n_turns):
+    def turn_wheel(self, n_turns, wait=True):
         """
         Turn the wheel n_turns
 
         Args:
             n_turns (int): Number of turns to rotate the wheel
         """
-        self.wheel.turn(n_turns, wait=True)
+        # self.wheel.turn(n_turns, wait=True)
+        for _ in range(n_turns):
+            self.wheel.move(FULL_WHEEL_TURN, wait=wait)
+
 
 class Analyzer(Centripeta):
     """
@@ -85,7 +97,7 @@ class Analyzer(Centripeta):
         wheel (centripeta.WheelControl): A WheelControl object from centripeta
     """
 
-    def __init__(self, manager: CommandManager=CommandManager(get_all_serial_ports)):
+    def __init__(self, manager: CommandManager):
         #Read in default device config
         devices = read_json(CONFIG_PATH + 'analyzer_config.json')
 
@@ -95,6 +107,8 @@ class Analyzer(Centripeta):
         #
         self.horz_ph = self._mgr.devices['horz_ph']
         self.vert_ph = self._mgr.devices['vert_ph']
+        self.horz_cond = self._mgr.devices['horz_cond']
+        self.vert_cond = self._mgr.devices['vert_cond']
         self.wheel = self._mgr.devices['analysis_wheel']
 
     def turn_wheel(self, n_turns, wait=True):
@@ -118,8 +132,42 @@ class Analyzer(Centripeta):
         """
         self.horz_ph.move_to(steps)
 
-    def move_to(self, name, steps):
+    def home(self, name, wait=True):
+        """
+        Home the device
+
+        Args: 
+            name (str): The name of the stepmoter 
+            wait (bool): Wait until the device is idle, defualt set to True
+
+        """
+        self._mgr.devices[name].home()
+
+    def move(self, name, steps, wait=True):
+        """
+        Move the specific stepmoter a certain number of steps
+
+        Args:
+            name (str): The name of the stepmoter
+            steps (int): The number of the steps to move
+            wait (bool): Wait until the device is idle, defualt set to True
+
+        """
+        self._mgr.devices[name].move(steps)
+
+    def move_to(self, name, steps, wait=True):
+        """
+        Move the specific stepmoter to a specific location
+
+        Args:
+            name (str): The name of the stepmoter
+            steps (int): The position to move to 
+            wait (bool): Wait until the device is idle, defualt set to True
+
+        """
         self._mgr.devices[name].move_to(steps)
+    
+    
 
 
 def get_all_serial_ports():

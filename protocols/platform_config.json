@@ -18,7 +18,14 @@
         },
         {
             "port":"/dev/tty.usbmodem141431"
+        },
+        {
+            "port":"/dev/cu.usbserial-FT2ISF2K"
+        },
+        {
+            "port":"/dev/tty.usbserial-FT2ISF2K"
         }
+
     ],
     "devices": {
         "dispense_wheel": {
