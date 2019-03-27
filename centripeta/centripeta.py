@@ -7,16 +7,10 @@
 
 """
 
-import os
-import sys
-import inspect
-import logging 
-
 from pycont.controller import MultiPumpController
 from centripeta.utils import read_json
 from commanduino import CommandManager
 import centripeta
-
 
 """ CONSTANTS """
 FULL_WHEEL_TURN = 6400
@@ -53,18 +47,12 @@ class Dispenser(Centripeta):
         Centripeta.__init__(self, manager, devices['devices'])
 
         # Initialise the Wheel system
-        # self.wheel = wheel
         self.wheel = self._mgr.devices['dispense_wheel']
 
         # Initialise the tricontinental pumps
         self._pump_controller = pump_controller
         self._pump_controller.smart_initialize()
         self.pumps = self._pump_controller.pumps 
-
-
-
-        # # Initialise the logging module
-        # self.logger = Logger())
 
 
     def dispense(self, pump_name, volume):
@@ -75,8 +63,8 @@ class Dispenser(Centripeta):
             name (str): Name of the reagent pump
             volume (int/float): Volume to dispense
         """
-        self.pumps[pump_name].pump(volume, 'I')
-        self.pumps[pump_name].deliver(volume, 'O')
+        self.pumps[pump_name].pump(volume, 'I', wait=True)
+        self.pumps[pump_name].deliver(volume, 'O', wait=True)
 
     def turn_wheel(self, n_turns, wait=True):
         """
@@ -119,54 +107,6 @@ class Analyzer(Centripeta):
         """
         for _ in range(n_turns):
             self.wheel.move(FULL_WHEEL_TURN, wait=wait)
-    
-    def horzpH_move_to(self, steps, wait=True):
-        """
-        Move the stepmoter to a specific location
-
-        Args:
-            steps (int): The position to move to 
-            wait (bool): Wait until the device is idle, defualt set to True
-
-        """
-        self.horz_ph.move_to(steps)
-
-    def home(self, name, wait=True):
-        """
-        Home the device
-
-        Args: 
-            name (str): The name of the stepmoter 
-            wait (bool): Wait until the device is idle, defualt set to True
-
-        """
-        self._mgr.devices[name].home()
-
-    def move(self, name, steps, wait=True):
-        """
-        Move the specific stepmoter a certain number of steps
-
-        Args:
-            name (str): The name of the stepmoter
-            steps (int): The number of the steps to move
-            wait (bool): Wait until the device is idle, defualt set to True
-
-        """
-        self._mgr.devices[name].move(steps)
-
-    def move_to(self, name, steps, wait=True):
-        """
-        Move the specific stepmoter to a specific location
-
-        Args:
-            name (str): The name of the stepmoter
-            steps (int): The position to move to 
-            wait (bool): Wait until the device is idle, defualt set to True
-
-        """
-        self._mgr.devices[name].move_to(steps)
-    
-    
 
 
 def get_all_serial_ports():
