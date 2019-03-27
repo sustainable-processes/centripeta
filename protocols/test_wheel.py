@@ -1,24 +1,13 @@
-from centripeta import WheelControl
+from centripeta import Dispenser
+from pycont.controller import MultiPumpController
 from commanduino import CommandManager
-from commanduino.devices.axis import Axis, MultiAxis
 import json
 
-with open('platform_config.json', 'r') as f:
-    wheel_config = json.load(f)
-
-with open('platform_config_simple.json', 'r') as f:
-    platform_config = json.load(f)
     
-steppers = CommandManager.from_config(platform_config)
-# w = WheelControl(config=wheel_config, name='analysisWheel')
-# w.turn(3)
+mgr = CommandManager.from_configfile('platform_config_ports.json')
+pump_ctrl = MultiPumpController.from_configfile('pycont_config.json')
 
 
-
-horzpH = steppers.devices['horzpH']
-
-horzpH.home()
-
-horzpH.move_to(10000)
-
+d = Dispenser(mgr, pump_ctrl)
+d.turn_wheel(n_turns=10)
 

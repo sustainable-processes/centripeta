@@ -41,7 +41,7 @@ class Dispenser(Centripeta):
             connected to the wheel
 
     """
-    def __init__(self, manager:CommandManager, pumps: MultiPumpController=None):
+    def __init__(self, manager:CommandManager, pump_controller: MultiPumpController=None):
 
         # Initialise the camera
         # self.camera = CameraControl()
@@ -55,11 +55,11 @@ class Dispenser(Centripeta):
         # Initialise the Wheel system
         # self.wheel = wheel
         self.wheel = self._mgr.devices['dispense_wheel']
-        
+
         # Initialise the tricontinental pumps
-        self._mgr = pumps
-        self._mgr.smart_initialize()
-        self.pumps = self._mgr.pumps 
+        self._pump_controller = pump_controller
+        self._pump_controller.smart_initialize()
+        self.pumps = self._pump_controller.pumps 
 
 
 
@@ -104,7 +104,6 @@ class Analyzer(Centripeta):
         #Initialize devices
         Centripeta.__init__(self, manager, devices['devices'])
 
-        #
         self.horz_ph = self._mgr.devices['horz_ph']
         self.vert_ph = self._mgr.devices['vert_ph']
         self.horz_cond = self._mgr.devices['horz_cond']
