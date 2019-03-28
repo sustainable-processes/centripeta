@@ -19,14 +19,12 @@ pumps = MultiPumpController.from_configfile('pycont_config.json')
 a = Analyzer(mgr)
 d = Dispenser(manager=mgr, pump_controller=pumps)
 
+a.drying_fans.set_pwm_value(200)
 a.turn_wheel(n_turns=3)
 a.horz_cond.move(10000)
 a.horz_cond.home()
 a.vert_cond.move(10000)
 a.vert_cond.home()
-
-
-# Instantiate the robotic controls 
 
 
 #Read in conditions and run the robot
