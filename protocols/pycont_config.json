@@ -16,14 +16,14 @@
     "pumps": {
         "sample": {
             "switch": "0",
-            "volume": 12.5,
-            "top_velocity": 12000
+            "volume": 12.5
+            
         },
 
         "acetone": {
             "switch": "1",
-            "volume": 5,
-            "top_velocity": 12000
+            "volume": 5
+            
         },
 
         "water": {

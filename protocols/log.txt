@@ -377,3 +377,832 @@ INFO:commanduino.CommandManager:Device "drying_fans" with id "dfans" and of type
 INFO:commanduino.CommandManager:Device "drying_fans" with id "dfans" and of type "ANALOGWRITE" found in the register, creating it
 INFO:commanduino.CommandManager:Device "dispense_wheel" with id "wd" and of type "LINEARACCELSTEPPER" found in 0.009s
 INFO:commanduino.CommandManager:Device "dispense_wheel" with id "wd" and of type "LINEARACCELSTEPPER" found in the register, creating it
+INFO:commanduino.CommandManager:Found CommandManager on port "/dev/cu.usbmodem141411", init time was 1.005 seconds
+INFO:commanduino.CommandManager:Found CommandManager on port "/dev/tty.usbmodem141441", init time was 1.007 seconds
+INFO:commanduino.CommandManager:Found CommandManager on port "/dev/cu.usbmodem141431", init time was 1.007 seconds
+WARNING:commanduino.CommandManager:Port /dev/tty.usbmodem141431 was not found
+WARNING:commanduino.CommandManager:Received unknown command "?,a1d"
+WARNING:commanduino.CommandManager:Received unknown command "?,a1d"
+INFO:commanduino.CommandManager:Device "analysis_wheel" with id "a1d" and of type "LINEARACCELSTEPPER" found in 0.007s
+INFO:commanduino.CommandManager:Device "analysis_wheel" with id "a1d" and of type "LINEARACCELSTEPPER" found in the register, creating it
+WARNING:commanduino.CommandManager:Received unknown command "?,hpH"
+WARNING:commanduino.CommandManager:Received unknown command "?,hpH"
+INFO:commanduino.CommandManager:Device "horz_ph" with id "hpH" and of type "LINEARACCELSTEPPER" found in 0.007s
+INFO:commanduino.CommandManager:Device "horz_ph" with id "hpH" and of type "LINEARACCELSTEPPER" found in the register, creating it
+WARNING:commanduino.CommandManager:Received unknown command "?,vpH"
+WARNING:commanduino.CommandManager:Received unknown command "?,vpH"
+INFO:commanduino.CommandManager:Device "vert_ph" with id "vpH" and of type "LINEARACCELSTEPPER" found in 0.007s
+INFO:commanduino.CommandManager:Device "vert_ph" with id "vpH" and of type "LINEARACCELSTEPPER" found in the register, creating it
+WARNING:commanduino.CommandManager:Received unknown command "?,hcond"
+WARNING:commanduino.CommandManager:Received unknown command "?,hcond"
+INFO:commanduino.CommandManager:Device "horz_cond" with id "hcond" and of type "LINEARACCELSTEPPER" found in 0.011s
+INFO:commanduino.CommandManager:Device "horz_cond" with id "hcond" and of type "LINEARACCELSTEPPER" found in the register, creating it
+WARNING:commanduino.CommandManager:Received unknown command "?,vcond"
+WARNING:commanduino.CommandManager:Received unknown command "?,vcond"
+INFO:commanduino.CommandManager:Device "vert_cond" with id "vcond" and of type "LINEARACCELSTEPPER" found in 0.01s
+INFO:commanduino.CommandManager:Device "vert_cond" with id "vcond" and of type "LINEARACCELSTEPPER" found in the register, creating it
+WARNING:commanduino.CommandManager:Received unknown command "?,hvisc"
+INFO:commanduino.CommandManager:Device "horz_visc" with id "hvisc" and of type "LINEARACCELSTEPPER" found in 0.011s
+INFO:commanduino.CommandManager:Device "horz_visc" with id "hvisc" and of type "LINEARACCELSTEPPER" found in the register, creating it
+WARNING:commanduino.CommandManager:Received unknown command "?,vvisc"
+INFO:commanduino.CommandManager:Device "vert_visc" with id "vvisc" and of type "LINEARACCELSTEPPER" found in 0.01s
+INFO:commanduino.CommandManager:Device "vert_visc" with id "vvisc" and of type "LINEARACCELSTEPPER" found in the register, creating it
+WARNING:commanduino.CommandManager:Received unknown command "?,vturb"
+INFO:commanduino.CommandManager:Device "vert_turb" with id "vturb" and of type "LINEARACCELSTEPPER" found in 0.01s
+INFO:commanduino.CommandManager:Device "vert_turb" with id "vturb" and of type "LINEARACCELSTEPPER" found in the register, creating it
+WARNING:commanduino.CommandManager:Received unknown command "?,a2fans"
+INFO:commanduino.CommandManager:Device "a2_fans" with id "a2fans" and of type "ANALOGWRITE" found in 0.008s
+INFO:commanduino.CommandManager:Device "a2_fans" with id "a2fans" and of type "ANALOGWRITE" found in the register, creating it
+WARNING:commanduino.CommandManager:Received unknown command "?,dfans"
+INFO:commanduino.CommandManager:Device "drying_fans" with id "dfans" and of type "ANALOGWRITE" found in 0.01s
+INFO:commanduino.CommandManager:Device "drying_fans" with id "dfans" and of type "ANALOGWRITE" found in the register, creating it
+INFO:commanduino.CommandManager:Device "dispense_wheel" with id "wd" and of type "LINEARACCELSTEPPER" found in 0.009s
+INFO:commanduino.CommandManager:Device "dispense_wheel" with id "wd" and of type "LINEARACCELSTEPPER" found in the register, creating it
+INFO:commanduino.CommandManager:Found CommandManager on port "/dev/cu.usbmodem141411", init time was 1.007 seconds
+INFO:commanduino.CommandManager:Found CommandManager on port "/dev/tty.usbmodem141441", init time was 1.005 seconds
+INFO:commanduino.CommandManager:Found CommandManager on port "/dev/cu.usbmodem141431", init time was 1.006 seconds
+WARNING:commanduino.CommandManager:Port /dev/tty.usbmodem141431 was not found
+WARNING:commanduino.CommandManager:Received unknown command "?,a1d"
+WARNING:commanduino.CommandManager:Received unknown command "?,a1d"
+INFO:commanduino.CommandManager:Device "analysis_wheel" with id "a1d" and of type "LINEARACCELSTEPPER" found in 0.009s
+INFO:commanduino.CommandManager:Device "analysis_wheel" with id "a1d" and of type "LINEARACCELSTEPPER" found in the register, creating it
+WARNING:commanduino.CommandManager:Received unknown command "?,hpH"
+WARNING:commanduino.CommandManager:Received unknown command "?,hpH"
+INFO:commanduino.CommandManager:Device "horz_ph" with id "hpH" and of type "LINEARACCELSTEPPER" found in 0.01s
+INFO:commanduino.CommandManager:Device "horz_ph" with id "hpH" and of type "LINEARACCELSTEPPER" found in the register, creating it
+WARNING:commanduino.CommandManager:Received unknown command "?,vpH"
+WARNING:commanduino.CommandManager:Received unknown command "?,vpH"
+INFO:commanduino.CommandManager:Device "vert_ph" with id "vpH" and of type "LINEARACCELSTEPPER" found in 0.011s
+INFO:commanduino.CommandManager:Device "vert_ph" with id "vpH" and of type "LINEARACCELSTEPPER" found in the register, creating it
+WARNING:commanduino.CommandManager:Received unknown command "?,hcond"
+WARNING:commanduino.CommandManager:Received unknown command "?,hcond"
+INFO:commanduino.CommandManager:Device "horz_cond" with id "hcond" and of type "LINEARACCELSTEPPER" found in 0.008s
+INFO:commanduino.CommandManager:Device "horz_cond" with id "hcond" and of type "LINEARACCELSTEPPER" found in the register, creating it
+WARNING:commanduino.CommandManager:Received unknown command "?,vcond"
+WARNING:commanduino.CommandManager:Received unknown command "?,vcond"
+INFO:commanduino.CommandManager:Device "vert_cond" with id "vcond" and of type "LINEARACCELSTEPPER" found in 0.007s
+INFO:commanduino.CommandManager:Device "vert_cond" with id "vcond" and of type "LINEARACCELSTEPPER" found in the register, creating it
+WARNING:commanduino.CommandManager:Received unknown command "?,hvisc"
+INFO:commanduino.CommandManager:Device "horz_visc" with id "hvisc" and of type "LINEARACCELSTEPPER" found in 0.01s
+INFO:commanduino.CommandManager:Device "horz_visc" with id "hvisc" and of type "LINEARACCELSTEPPER" found in the register, creating it
+WARNING:commanduino.CommandManager:Received unknown command "?,vvisc"
+INFO:commanduino.CommandManager:Device "vert_visc" with id "vvisc" and of type "LINEARACCELSTEPPER" found in 0.009s
+INFO:commanduino.CommandManager:Device "vert_visc" with id "vvisc" and of type "LINEARACCELSTEPPER" found in the register, creating it
+WARNING:commanduino.CommandManager:Received unknown command "?,vturb"
+INFO:commanduino.CommandManager:Device "vert_turb" with id "vturb" and of type "LINEARACCELSTEPPER" found in 0.01s
+INFO:commanduino.CommandManager:Device "vert_turb" with id "vturb" and of type "LINEARACCELSTEPPER" found in the register, creating it
+WARNING:commanduino.CommandManager:Received unknown command "?,a2fans"
+INFO:commanduino.CommandManager:Device "a2_fans" with id "a2fans" and of type "ANALOGWRITE" found in 0.01s
+INFO:commanduino.CommandManager:Device "a2_fans" with id "a2fans" and of type "ANALOGWRITE" found in the register, creating it
+WARNING:commanduino.CommandManager:Received unknown command "?,dfans"
+INFO:commanduino.CommandManager:Device "drying_fans" with id "dfans" and of type "ANALOGWRITE" found in 0.008s
+INFO:commanduino.CommandManager:Device "drying_fans" with id "dfans" and of type "ANALOGWRITE" found in the register, creating it
+INFO:commanduino.CommandManager:Device "dispense_wheel" with id "wd" and of type "LINEARACCELSTEPPER" found in 0.01s
+INFO:commanduino.CommandManager:Device "dispense_wheel" with id "wd" and of type "LINEARACCELSTEPPER" found in the register, creating it
+INFO:root:{Dipsensing condition 0
+INFO:commanduino.CommandManager:Found CommandManager on port "/dev/cu.usbmodem141411", init time was 1.006 seconds
+INFO:commanduino.CommandManager:Found CommandManager on port "/dev/tty.usbmodem141441", init time was 1.005 seconds
+INFO:commanduino.CommandManager:Found CommandManager on port "/dev/cu.usbmodem141431", init time was 1.007 seconds
+WARNING:commanduino.CommandManager:Port /dev/tty.usbmodem141431 was not found
+WARNING:commanduino.CommandManager:Received unknown command "?,a1d"
+WARNING:commanduino.CommandManager:Received unknown command "?,a1d"
+INFO:commanduino.CommandManager:Device "analysis_wheel" with id "a1d" and of type "LINEARACCELSTEPPER" found in 0.01s
+INFO:commanduino.CommandManager:Device "analysis_wheel" with id "a1d" and of type "LINEARACCELSTEPPER" found in the register, creating it
+WARNING:commanduino.CommandManager:Received unknown command "?,hpH"
+WARNING:commanduino.CommandManager:Received unknown command "?,hpH"
+INFO:commanduino.CommandManager:Device "horz_ph" with id "hpH" and of type "LINEARACCELSTEPPER" found in 0.01s
+INFO:commanduino.CommandManager:Device "horz_ph" with id "hpH" and of type "LINEARACCELSTEPPER" found in the register, creating it
+WARNING:commanduino.CommandManager:Received unknown command "?,vpH"
+WARNING:commanduino.CommandManager:Received unknown command "?,vpH"
+INFO:commanduino.CommandManager:Device "vert_ph" with id "vpH" and of type "LINEARACCELSTEPPER" found in 0.009s
+INFO:commanduino.CommandManager:Device "vert_ph" with id "vpH" and of type "LINEARACCELSTEPPER" found in the register, creating it
+WARNING:commanduino.CommandManager:Received unknown command "?,hcond"
+WARNING:commanduino.CommandManager:Received unknown command "?,hcond"
+INFO:commanduino.CommandManager:Device "horz_cond" with id "hcond" and of type "LINEARACCELSTEPPER" found in 0.011s
+INFO:commanduino.CommandManager:Device "horz_cond" with id "hcond" and of type "LINEARACCELSTEPPER" found in the register, creating it
+WARNING:commanduino.CommandManager:Received unknown command "?,vcond"
+WARNING:commanduino.CommandManager:Received unknown command "?,vcond"
+INFO:commanduino.CommandManager:Device "vert_cond" with id "vcond" and of type "LINEARACCELSTEPPER" found in 0.011s
+INFO:commanduino.CommandManager:Device "vert_cond" with id "vcond" and of type "LINEARACCELSTEPPER" found in the register, creating it
+WARNING:commanduino.CommandManager:Received unknown command "?,hvisc"
+INFO:commanduino.CommandManager:Device "horz_visc" with id "hvisc" and of type "LINEARACCELSTEPPER" found in 0.01s
+INFO:commanduino.CommandManager:Device "horz_visc" with id "hvisc" and of type "LINEARACCELSTEPPER" found in the register, creating it
+WARNING:commanduino.CommandManager:Received unknown command "?,vvisc"
+INFO:commanduino.CommandManager:Device "vert_visc" with id "vvisc" and of type "LINEARACCELSTEPPER" found in 0.008s
+INFO:commanduino.CommandManager:Device "vert_visc" with id "vvisc" and of type "LINEARACCELSTEPPER" found in the register, creating it
+WARNING:commanduino.CommandManager:Received unknown command "?,vturb"
+INFO:commanduino.CommandManager:Device "vert_turb" with id "vturb" and of type "LINEARACCELSTEPPER" found in 0.01s
+INFO:commanduino.CommandManager:Device "vert_turb" with id "vturb" and of type "LINEARACCELSTEPPER" found in the register, creating it
+WARNING:commanduino.CommandManager:Received unknown command "?,a2fans"
+INFO:commanduino.CommandManager:Device "a2_fans" with id "a2fans" and of type "ANALOGWRITE" found in 0.01s
+INFO:commanduino.CommandManager:Device "a2_fans" with id "a2fans" and of type "ANALOGWRITE" found in the register, creating it
+WARNING:commanduino.CommandManager:Received unknown command "?,dfans"
+INFO:commanduino.CommandManager:Device "drying_fans" with id "dfans" and of type "ANALOGWRITE" found in 0.009s
+INFO:commanduino.CommandManager:Device "drying_fans" with id "dfans" and of type "ANALOGWRITE" found in the register, creating it
+INFO:commanduino.CommandManager:Device "dispense_wheel" with id "wd" and of type "LINEARACCELSTEPPER" found in 0.009s
+INFO:commanduino.CommandManager:Device "dispense_wheel" with id "wd" and of type "LINEARACCELSTEPPER" found in the register, creating it
+INFO:commanduino.CommandManager:Found CommandManager on port "/dev/cu.usbmodem141411", init time was 1.007 seconds
+INFO:commanduino.CommandManager:Found CommandManager on port "/dev/tty.usbmodem141441", init time was 1.009 seconds
+INFO:commanduino.CommandManager:Found CommandManager on port "/dev/cu.usbmodem141431", init time was 1.007 seconds
+WARNING:commanduino.CommandManager:Port /dev/tty.usbmodem141431 was not found
+WARNING:commanduino.CommandManager:Received unknown command "?,a1d"
+WARNING:commanduino.CommandManager:Received unknown command "?,a1d"
+INFO:commanduino.CommandManager:Device "analysis_wheel" with id "a1d" and of type "LINEARACCELSTEPPER" found in 0.007s
+INFO:commanduino.CommandManager:Device "analysis_wheel" with id "a1d" and of type "LINEARACCELSTEPPER" found in the register, creating it
+WARNING:commanduino.CommandManager:Received unknown command "?,hpH"
+WARNING:commanduino.CommandManager:Received unknown command "?,hpH"
+INFO:commanduino.CommandManager:Device "horz_ph" with id "hpH" and of type "LINEARACCELSTEPPER" found in 0.01s
+INFO:commanduino.CommandManager:Device "horz_ph" with id "hpH" and of type "LINEARACCELSTEPPER" found in the register, creating it
+WARNING:commanduino.CommandManager:Received unknown command "?,vpH"
+WARNING:commanduino.CommandManager:Received unknown command "?,vpH"
+INFO:commanduino.CommandManager:Device "vert_ph" with id "vpH" and of type "LINEARACCELSTEPPER" found in 0.007s
+INFO:commanduino.CommandManager:Device "vert_ph" with id "vpH" and of type "LINEARACCELSTEPPER" found in the register, creating it
+WARNING:commanduino.CommandManager:Received unknown command "?,hcond"
+WARNING:commanduino.CommandManager:Received unknown command "?,hcond"
+INFO:commanduino.CommandManager:Device "horz_cond" with id "hcond" and of type "LINEARACCELSTEPPER" found in 0.011s
+INFO:commanduino.CommandManager:Device "horz_cond" with id "hcond" and of type "LINEARACCELSTEPPER" found in the register, creating it
+WARNING:commanduino.CommandManager:Received unknown command "?,vcond"
+WARNING:commanduino.CommandManager:Received unknown command "?,vcond"
+INFO:commanduino.CommandManager:Device "vert_cond" with id "vcond" and of type "LINEARACCELSTEPPER" found in 0.01s
+INFO:commanduino.CommandManager:Device "vert_cond" with id "vcond" and of type "LINEARACCELSTEPPER" found in the register, creating it
+WARNING:commanduino.CommandManager:Received unknown command "?,hvisc"
+INFO:commanduino.CommandManager:Device "horz_visc" with id "hvisc" and of type "LINEARACCELSTEPPER" found in 0.009s
+INFO:commanduino.CommandManager:Device "horz_visc" with id "hvisc" and of type "LINEARACCELSTEPPER" found in the register, creating it
+WARNING:commanduino.CommandManager:Received unknown command "?,vvisc"
+INFO:commanduino.CommandManager:Device "vert_visc" with id "vvisc" and of type "LINEARACCELSTEPPER" found in 0.01s
+INFO:commanduino.CommandManager:Device "vert_visc" with id "vvisc" and of type "LINEARACCELSTEPPER" found in the register, creating it
+WARNING:commanduino.CommandManager:Received unknown command "?,vturb"
+INFO:commanduino.CommandManager:Device "vert_turb" with id "vturb" and of type "LINEARACCELSTEPPER" found in 0.01s
+INFO:commanduino.CommandManager:Device "vert_turb" with id "vturb" and of type "LINEARACCELSTEPPER" found in the register, creating it
+WARNING:commanduino.CommandManager:Received unknown command "?,a2fans"
+INFO:commanduino.CommandManager:Device "a2_fans" with id "a2fans" and of type "ANALOGWRITE" found in 0.009s
+INFO:commanduino.CommandManager:Device "a2_fans" with id "a2fans" and of type "ANALOGWRITE" found in the register, creating it
+WARNING:commanduino.CommandManager:Received unknown command "?,dfans"
+INFO:commanduino.CommandManager:Device "drying_fans" with id "dfans" and of type "ANALOGWRITE" found in 0.009s
+INFO:commanduino.CommandManager:Device "drying_fans" with id "dfans" and of type "ANALOGWRITE" found in the register, creating it
+INFO:commanduino.CommandManager:Device "dispense_wheel" with id "wd" and of type "LINEARACCELSTEPPER" found in 0.01s
+INFO:commanduino.CommandManager:Device "dispense_wheel" with id "wd" and of type "LINEARACCELSTEPPER" found in the register, creating it
+INFO:commanduino.CommandManager:Found CommandManager on port "/dev/cu.usbmodem141411", init time was 1.006 seconds
+INFO:commanduino.CommandManager:Found CommandManager on port "/dev/tty.usbmodem141441", init time was 1.005 seconds
+INFO:commanduino.CommandManager:Found CommandManager on port "/dev/cu.usbmodem141431", init time was 1.009 seconds
+WARNING:commanduino.CommandManager:Port /dev/tty.usbmodem141431 was not found
+WARNING:commanduino.CommandManager:Received unknown command "?,a1d"
+WARNING:commanduino.CommandManager:Received unknown command "?,a1d"
+INFO:commanduino.CommandManager:Device "analysis_wheel" with id "a1d" and of type "LINEARACCELSTEPPER" found in 0.008s
+INFO:commanduino.CommandManager:Device "analysis_wheel" with id "a1d" and of type "LINEARACCELSTEPPER" found in the register, creating it
+WARNING:commanduino.CommandManager:Received unknown command "?,hpH"
+WARNING:commanduino.CommandManager:Received unknown command "?,hpH"
+INFO:commanduino.CommandManager:Device "horz_ph" with id "hpH" and of type "LINEARACCELSTEPPER" found in 0.007s
+INFO:commanduino.CommandManager:Device "horz_ph" with id "hpH" and of type "LINEARACCELSTEPPER" found in the register, creating it
+WARNING:commanduino.CommandManager:Received unknown command "?,vpH"
+WARNING:commanduino.CommandManager:Received unknown command "?,vpH"
+INFO:commanduino.CommandManager:Device "vert_ph" with id "vpH" and of type "LINEARACCELSTEPPER" found in 0.01s
+INFO:commanduino.CommandManager:Device "vert_ph" with id "vpH" and of type "LINEARACCELSTEPPER" found in the register, creating it
+WARNING:commanduino.CommandManager:Received unknown command "?,hcond"
+WARNING:commanduino.CommandManager:Received unknown command "?,hcond"
+INFO:commanduino.CommandManager:Device "horz_cond" with id "hcond" and of type "LINEARACCELSTEPPER" found in 0.007s
+INFO:commanduino.CommandManager:Device "horz_cond" with id "hcond" and of type "LINEARACCELSTEPPER" found in the register, creating it
+WARNING:commanduino.CommandManager:Received unknown command "?,vcond"
+WARNING:commanduino.CommandManager:Received unknown command "?,vcond"
+INFO:commanduino.CommandManager:Device "vert_cond" with id "vcond" and of type "LINEARACCELSTEPPER" found in 0.01s
+INFO:commanduino.CommandManager:Device "vert_cond" with id "vcond" and of type "LINEARACCELSTEPPER" found in the register, creating it
+WARNING:commanduino.CommandManager:Received unknown command "?,hvisc"
+INFO:commanduino.CommandManager:Device "horz_visc" with id "hvisc" and of type "LINEARACCELSTEPPER" found in 0.009s
+INFO:commanduino.CommandManager:Device "horz_visc" with id "hvisc" and of type "LINEARACCELSTEPPER" found in the register, creating it
+WARNING:commanduino.CommandManager:Received unknown command "?,vvisc"
+INFO:commanduino.CommandManager:Device "vert_visc" with id "vvisc" and of type "LINEARACCELSTEPPER" found in 0.01s
+INFO:commanduino.CommandManager:Device "vert_visc" with id "vvisc" and of type "LINEARACCELSTEPPER" found in the register, creating it
+WARNING:commanduino.CommandManager:Received unknown command "?,vturb"
+INFO:commanduino.CommandManager:Device "vert_turb" with id "vturb" and of type "LINEARACCELSTEPPER" found in 0.01s
+INFO:commanduino.CommandManager:Device "vert_turb" with id "vturb" and of type "LINEARACCELSTEPPER" found in the register, creating it
+WARNING:commanduino.CommandManager:Received unknown command "?,a2fans"
+INFO:commanduino.CommandManager:Device "a2_fans" with id "a2fans" and of type "ANALOGWRITE" found in 0.01s
+INFO:commanduino.CommandManager:Device "a2_fans" with id "a2fans" and of type "ANALOGWRITE" found in the register, creating it
+WARNING:commanduino.CommandManager:Received unknown command "?,dfans"
+INFO:commanduino.CommandManager:Device "drying_fans" with id "dfans" and of type "ANALOGWRITE" found in 0.008s
+INFO:commanduino.CommandManager:Device "drying_fans" with id "dfans" and of type "ANALOGWRITE" found in the register, creating it
+INFO:commanduino.CommandManager:Device "dispense_wheel" with id "wd" and of type "LINEARACCELSTEPPER" found in 0.01s
+INFO:commanduino.CommandManager:Device "dispense_wheel" with id "wd" and of type "LINEARACCELSTEPPER" found in the register, creating it
+INFO:commanduino.CommandManager:Found CommandManager on port "/dev/cu.usbmodem141411", init time was 1.006 seconds
+INFO:commanduino.CommandManager:Found CommandManager on port "/dev/tty.usbmodem141441", init time was 1.007 seconds
+INFO:commanduino.CommandManager:Found CommandManager on port "/dev/cu.usbmodem141431", init time was 1.007 seconds
+WARNING:commanduino.CommandManager:Port /dev/tty.usbmodem141431 was not found
+WARNING:commanduino.CommandManager:Received unknown command "?,a1d"
+WARNING:commanduino.CommandManager:Received unknown command "?,a1d"
+INFO:commanduino.CommandManager:Device "analysis_wheel" with id "a1d" and of type "LINEARACCELSTEPPER" found in 0.01s
+INFO:commanduino.CommandManager:Device "analysis_wheel" with id "a1d" and of type "LINEARACCELSTEPPER" found in the register, creating it
+WARNING:commanduino.CommandManager:Received unknown command "?,hpH"
+WARNING:commanduino.CommandManager:Received unknown command "?,hpH"
+INFO:commanduino.CommandManager:Device "horz_ph" with id "hpH" and of type "LINEARACCELSTEPPER" found in 0.01s
+INFO:commanduino.CommandManager:Device "horz_ph" with id "hpH" and of type "LINEARACCELSTEPPER" found in the register, creating it
+WARNING:commanduino.CommandManager:Received unknown command "?,vpH"
+WARNING:commanduino.CommandManager:Received unknown command "?,vpH"
+INFO:commanduino.CommandManager:Device "vert_ph" with id "vpH" and of type "LINEARACCELSTEPPER" found in 0.01s
+INFO:commanduino.CommandManager:Device "vert_ph" with id "vpH" and of type "LINEARACCELSTEPPER" found in the register, creating it
+WARNING:commanduino.CommandManager:Received unknown command "?,hcond"
+WARNING:commanduino.CommandManager:Received unknown command "?,hcond"
+INFO:commanduino.CommandManager:Device "horz_cond" with id "hcond" and of type "LINEARACCELSTEPPER" found in 0.011s
+INFO:commanduino.CommandManager:Device "horz_cond" with id "hcond" and of type "LINEARACCELSTEPPER" found in the register, creating it
+WARNING:commanduino.CommandManager:Received unknown command "?,vcond"
+WARNING:commanduino.CommandManager:Received unknown command "?,vcond"
+INFO:commanduino.CommandManager:Device "vert_cond" with id "vcond" and of type "LINEARACCELSTEPPER" found in 0.011s
+INFO:commanduino.CommandManager:Device "vert_cond" with id "vcond" and of type "LINEARACCELSTEPPER" found in the register, creating it
+WARNING:commanduino.CommandManager:Received unknown command "?,hvisc"
+INFO:commanduino.CommandManager:Device "horz_visc" with id "hvisc" and of type "LINEARACCELSTEPPER" found in 0.009s
+INFO:commanduino.CommandManager:Device "horz_visc" with id "hvisc" and of type "LINEARACCELSTEPPER" found in the register, creating it
+WARNING:commanduino.CommandManager:Received unknown command "?,vvisc"
+INFO:commanduino.CommandManager:Device "vert_visc" with id "vvisc" and of type "LINEARACCELSTEPPER" found in 0.01s
+INFO:commanduino.CommandManager:Device "vert_visc" with id "vvisc" and of type "LINEARACCELSTEPPER" found in the register, creating it
+WARNING:commanduino.CommandManager:Received unknown command "?,vturb"
+INFO:commanduino.CommandManager:Device "vert_turb" with id "vturb" and of type "LINEARACCELSTEPPER" found in 0.009s
+INFO:commanduino.CommandManager:Device "vert_turb" with id "vturb" and of type "LINEARACCELSTEPPER" found in the register, creating it
+WARNING:commanduino.CommandManager:Received unknown command "?,a2fans"
+INFO:commanduino.CommandManager:Device "a2_fans" with id "a2fans" and of type "ANALOGWRITE" found in 0.01s
+INFO:commanduino.CommandManager:Device "a2_fans" with id "a2fans" and of type "ANALOGWRITE" found in the register, creating it
+WARNING:commanduino.CommandManager:Received unknown command "?,dfans"
+INFO:commanduino.CommandManager:Device "drying_fans" with id "dfans" and of type "ANALOGWRITE" found in 0.009s
+INFO:commanduino.CommandManager:Device "drying_fans" with id "dfans" and of type "ANALOGWRITE" found in the register, creating it
+INFO:commanduino.CommandManager:Device "dispense_wheel" with id "wd" and of type "LINEARACCELSTEPPER" found in 0.007s
+INFO:commanduino.CommandManager:Device "dispense_wheel" with id "wd" and of type "LINEARACCELSTEPPER" found in the register, creating it
+INFO:commanduino.CommandManager:Found CommandManager on port "/dev/cu.usbmodem141411", init time was 1.006 seconds
+INFO:commanduino.CommandManager:Found CommandManager on port "/dev/tty.usbmodem141441", init time was 1.008 seconds
+INFO:commanduino.CommandManager:Found CommandManager on port "/dev/cu.usbmodem141431", init time was 1.005 seconds
+WARNING:commanduino.CommandManager:Port /dev/tty.usbmodem141431 was not found
+WARNING:commanduino.CommandManager:Received unknown command "?,a1d"
+WARNING:commanduino.CommandManager:Received unknown command "?,a1d"
+INFO:commanduino.CommandManager:Device "analysis_wheel" with id "a1d" and of type "LINEARACCELSTEPPER" found in 0.01s
+INFO:commanduino.CommandManager:Device "analysis_wheel" with id "a1d" and of type "LINEARACCELSTEPPER" found in the register, creating it
+WARNING:commanduino.CommandManager:Received unknown command "?,hpH"
+WARNING:commanduino.CommandManager:Received unknown command "?,hpH"
+INFO:commanduino.CommandManager:Device "horz_ph" with id "hpH" and of type "LINEARACCELSTEPPER" found in 0.01s
+INFO:commanduino.CommandManager:Device "horz_ph" with id "hpH" and of type "LINEARACCELSTEPPER" found in the register, creating it
+WARNING:commanduino.CommandManager:Received unknown command "?,vpH"
+WARNING:commanduino.CommandManager:Received unknown command "?,vpH"
+INFO:commanduino.CommandManager:Device "vert_ph" with id "vpH" and of type "LINEARACCELSTEPPER" found in 0.007s
+INFO:commanduino.CommandManager:Device "vert_ph" with id "vpH" and of type "LINEARACCELSTEPPER" found in the register, creating it
+WARNING:commanduino.CommandManager:Received unknown command "?,hcond"
+WARNING:commanduino.CommandManager:Received unknown command "?,hcond"
+INFO:commanduino.CommandManager:Device "horz_cond" with id "hcond" and of type "LINEARACCELSTEPPER" found in 0.01s
+INFO:commanduino.CommandManager:Device "horz_cond" with id "hcond" and of type "LINEARACCELSTEPPER" found in the register, creating it
+WARNING:commanduino.CommandManager:Received unknown command "?,vcond"
+WARNING:commanduino.CommandManager:Received unknown command "?,vcond"
+INFO:commanduino.CommandManager:Device "vert_cond" with id "vcond" and of type "LINEARACCELSTEPPER" found in 0.007s
+INFO:commanduino.CommandManager:Device "vert_cond" with id "vcond" and of type "LINEARACCELSTEPPER" found in the register, creating it
+WARNING:commanduino.CommandManager:Received unknown command "?,hvisc"
+INFO:commanduino.CommandManager:Device "horz_visc" with id "hvisc" and of type "LINEARACCELSTEPPER" found in 0.011s
+INFO:commanduino.CommandManager:Device "horz_visc" with id "hvisc" and of type "LINEARACCELSTEPPER" found in the register, creating it
+WARNING:commanduino.CommandManager:Received unknown command "?,vvisc"
+INFO:commanduino.CommandManager:Device "vert_visc" with id "vvisc" and of type "LINEARACCELSTEPPER" found in 0.01s
+INFO:commanduino.CommandManager:Device "vert_visc" with id "vvisc" and of type "LINEARACCELSTEPPER" found in the register, creating it
+WARNING:commanduino.CommandManager:Received unknown command "?,vturb"
+INFO:commanduino.CommandManager:Device "vert_turb" with id "vturb" and of type "LINEARACCELSTEPPER" found in 0.009s
+INFO:commanduino.CommandManager:Device "vert_turb" with id "vturb" and of type "LINEARACCELSTEPPER" found in the register, creating it
+WARNING:commanduino.CommandManager:Received unknown command "?,a2fans"
+INFO:commanduino.CommandManager:Device "a2_fans" with id "a2fans" and of type "ANALOGWRITE" found in 0.009s
+INFO:commanduino.CommandManager:Device "a2_fans" with id "a2fans" and of type "ANALOGWRITE" found in the register, creating it
+WARNING:commanduino.CommandManager:Received unknown command "?,dfans"
+INFO:commanduino.CommandManager:Device "drying_fans" with id "dfans" and of type "ANALOGWRITE" found in 0.01s
+INFO:commanduino.CommandManager:Device "drying_fans" with id "dfans" and of type "ANALOGWRITE" found in the register, creating it
+INFO:commanduino.CommandManager:Device "dispense_wheel" with id "wd" and of type "LINEARACCELSTEPPER" found in 0.01s
+INFO:commanduino.CommandManager:Device "dispense_wheel" with id "wd" and of type "LINEARACCELSTEPPER" found in the register, creating it
+INFO:commanduino.CommandManager:Found CommandManager on port "/dev/cu.usbmodem141411", init time was 1.008 seconds
+INFO:commanduino.CommandManager:Found CommandManager on port "/dev/tty.usbmodem141441", init time was 1.005 seconds
+INFO:commanduino.CommandManager:Found CommandManager on port "/dev/cu.usbmodem141431", init time was 1.008 seconds
+WARNING:commanduino.CommandManager:Port /dev/tty.usbmodem141431 was not found
+WARNING:commanduino.CommandManager:Received unknown command "?,a1d"
+WARNING:commanduino.CommandManager:Received unknown command "?,a1d"
+INFO:commanduino.CommandManager:Device "analysis_wheel" with id "a1d" and of type "LINEARACCELSTEPPER" found in 0.009s
+INFO:commanduino.CommandManager:Device "analysis_wheel" with id "a1d" and of type "LINEARACCELSTEPPER" found in the register, creating it
+WARNING:commanduino.CommandManager:Received unknown command "?,hpH"
+WARNING:commanduino.CommandManager:Received unknown command "?,hpH"
+INFO:commanduino.CommandManager:Device "horz_ph" with id "hpH" and of type "LINEARACCELSTEPPER" found in 0.007s
+INFO:commanduino.CommandManager:Device "horz_ph" with id "hpH" and of type "LINEARACCELSTEPPER" found in the register, creating it
+WARNING:commanduino.CommandManager:Received unknown command "?,vpH"
+WARNING:commanduino.CommandManager:Received unknown command "?,vpH"
+INFO:commanduino.CommandManager:Device "vert_ph" with id "vpH" and of type "LINEARACCELSTEPPER" found in 0.01s
+INFO:commanduino.CommandManager:Device "vert_ph" with id "vpH" and of type "LINEARACCELSTEPPER" found in the register, creating it
+WARNING:commanduino.CommandManager:Received unknown command "?,hcond"
+WARNING:commanduino.CommandManager:Received unknown command "?,hcond"
+INFO:commanduino.CommandManager:Device "horz_cond" with id "hcond" and of type "LINEARACCELSTEPPER" found in 0.01s
+INFO:commanduino.CommandManager:Device "horz_cond" with id "hcond" and of type "LINEARACCELSTEPPER" found in the register, creating it
+WARNING:commanduino.CommandManager:Received unknown command "?,vcond"
+WARNING:commanduino.CommandManager:Received unknown command "?,vcond"
+INFO:commanduino.CommandManager:Device "vert_cond" with id "vcond" and of type "LINEARACCELSTEPPER" found in 0.01s
+INFO:commanduino.CommandManager:Device "vert_cond" with id "vcond" and of type "LINEARACCELSTEPPER" found in the register, creating it
+WARNING:commanduino.CommandManager:Received unknown command "?,hvisc"
+INFO:commanduino.CommandManager:Device "horz_visc" with id "hvisc" and of type "LINEARACCELSTEPPER" found in 0.01s
+INFO:commanduino.CommandManager:Device "horz_visc" with id "hvisc" and of type "LINEARACCELSTEPPER" found in the register, creating it
+WARNING:commanduino.CommandManager:Received unknown command "?,vvisc"
+INFO:commanduino.CommandManager:Device "vert_visc" with id "vvisc" and of type "LINEARACCELSTEPPER" found in 0.01s
+INFO:commanduino.CommandManager:Device "vert_visc" with id "vvisc" and of type "LINEARACCELSTEPPER" found in the register, creating it
+WARNING:commanduino.CommandManager:Received unknown command "?,vturb"
+INFO:commanduino.CommandManager:Device "vert_turb" with id "vturb" and of type "LINEARACCELSTEPPER" found in 0.008s
+INFO:commanduino.CommandManager:Device "vert_turb" with id "vturb" and of type "LINEARACCELSTEPPER" found in the register, creating it
+WARNING:commanduino.CommandManager:Received unknown command "?,a2fans"
+INFO:commanduino.CommandManager:Device "a2_fans" with id "a2fans" and of type "ANALOGWRITE" found in 0.01s
+INFO:commanduino.CommandManager:Device "a2_fans" with id "a2fans" and of type "ANALOGWRITE" found in the register, creating it
+WARNING:commanduino.CommandManager:Received unknown command "?,dfans"
+INFO:commanduino.CommandManager:Device "drying_fans" with id "dfans" and of type "ANALOGWRITE" found in 0.009s
+INFO:commanduino.CommandManager:Device "drying_fans" with id "dfans" and of type "ANALOGWRITE" found in the register, creating it
+INFO:commanduino.CommandManager:Device "dispense_wheel" with id "wd" and of type "LINEARACCELSTEPPER" found in 0.01s
+INFO:commanduino.CommandManager:Device "dispense_wheel" with id "wd" and of type "LINEARACCELSTEPPER" found in the register, creating it
+INFO:root:{Dipsensing condition 0
+INFO:commanduino.CommandManager:Found CommandManager on port "/dev/cu.usbmodem141411", init time was 1.004 seconds
+INFO:commanduino.CommandManager:Found CommandManager on port "/dev/tty.usbmodem141441", init time was 1.007 seconds
+INFO:commanduino.CommandManager:Found CommandManager on port "/dev/cu.usbmodem141431", init time was 1.008 seconds
+WARNING:commanduino.CommandManager:Port /dev/tty.usbmodem141431 was not found
+WARNING:commanduino.CommandManager:Received unknown command "?,a1d"
+WARNING:commanduino.CommandManager:Received unknown command "?,a1d"
+INFO:commanduino.CommandManager:Device "analysis_wheel" with id "a1d" and of type "LINEARACCELSTEPPER" found in 0.007s
+INFO:commanduino.CommandManager:Device "analysis_wheel" with id "a1d" and of type "LINEARACCELSTEPPER" found in the register, creating it
+WARNING:commanduino.CommandManager:Received unknown command "?,hpH"
+WARNING:commanduino.CommandManager:Received unknown command "?,hpH"
+INFO:commanduino.CommandManager:Device "horz_ph" with id "hpH" and of type "LINEARACCELSTEPPER" found in 0.008s
+INFO:commanduino.CommandManager:Device "horz_ph" with id "hpH" and of type "LINEARACCELSTEPPER" found in the register, creating it
+WARNING:commanduino.CommandManager:Received unknown command "?,vpH"
+WARNING:commanduino.CommandManager:Received unknown command "?,vpH"
+INFO:commanduino.CommandManager:Device "vert_ph" with id "vpH" and of type "LINEARACCELSTEPPER" found in 0.01s
+INFO:commanduino.CommandManager:Device "vert_ph" with id "vpH" and of type "LINEARACCELSTEPPER" found in the register, creating it
+WARNING:commanduino.CommandManager:Received unknown command "?,hcond"
+WARNING:commanduino.CommandManager:Received unknown command "?,hcond"
+INFO:commanduino.CommandManager:Device "horz_cond" with id "hcond" and of type "LINEARACCELSTEPPER" found in 0.01s
+INFO:commanduino.CommandManager:Device "horz_cond" with id "hcond" and of type "LINEARACCELSTEPPER" found in the register, creating it
+WARNING:commanduino.CommandManager:Received unknown command "?,vcond"
+WARNING:commanduino.CommandManager:Received unknown command "?,vcond"
+INFO:commanduino.CommandManager:Device "vert_cond" with id "vcond" and of type "LINEARACCELSTEPPER" found in 0.01s
+INFO:commanduino.CommandManager:Device "vert_cond" with id "vcond" and of type "LINEARACCELSTEPPER" found in the register, creating it
+WARNING:commanduino.CommandManager:Received unknown command "?,hvisc"
+INFO:commanduino.CommandManager:Device "horz_visc" with id "hvisc" and of type "LINEARACCELSTEPPER" found in 0.008s
+INFO:commanduino.CommandManager:Device "horz_visc" with id "hvisc" and of type "LINEARACCELSTEPPER" found in the register, creating it
+WARNING:commanduino.CommandManager:Received unknown command "?,vvisc"
+INFO:commanduino.CommandManager:Device "vert_visc" with id "vvisc" and of type "LINEARACCELSTEPPER" found in 0.01s
+INFO:commanduino.CommandManager:Device "vert_visc" with id "vvisc" and of type "LINEARACCELSTEPPER" found in the register, creating it
+WARNING:commanduino.CommandManager:Received unknown command "?,vturb"
+INFO:commanduino.CommandManager:Device "vert_turb" with id "vturb" and of type "LINEARACCELSTEPPER" found in 0.01s
+INFO:commanduino.CommandManager:Device "vert_turb" with id "vturb" and of type "LINEARACCELSTEPPER" found in the register, creating it
+WARNING:commanduino.CommandManager:Received unknown command "?,a2fans"
+INFO:commanduino.CommandManager:Device "a2_fans" with id "a2fans" and of type "ANALOGWRITE" found in 0.008s
+INFO:commanduino.CommandManager:Device "a2_fans" with id "a2fans" and of type "ANALOGWRITE" found in the register, creating it
+WARNING:commanduino.CommandManager:Received unknown command "?,dfans"
+INFO:commanduino.CommandManager:Device "drying_fans" with id "dfans" and of type "ANALOGWRITE" found in 0.01s
+INFO:commanduino.CommandManager:Device "drying_fans" with id "dfans" and of type "ANALOGWRITE" found in the register, creating it
+INFO:commanduino.CommandManager:Device "dispense_wheel" with id "wd" and of type "LINEARACCELSTEPPER" found in 0.007s
+INFO:commanduino.CommandManager:Device "dispense_wheel" with id "wd" and of type "LINEARACCELSTEPPER" found in the register, creating it
+INFO:root:{Dipsensing condition 0
+INFO:commanduino.CommandManager:Found CommandManager on port "/dev/cu.usbmodem141411", init time was 1.005 seconds
+INFO:commanduino.CommandManager:Found CommandManager on port "/dev/tty.usbmodem141441", init time was 1.006 seconds
+INFO:commanduino.CommandManager:Found CommandManager on port "/dev/cu.usbmodem141431", init time was 1.005 seconds
+WARNING:commanduino.CommandManager:Port /dev/tty.usbmodem141431 was not found
+WARNING:commanduino.CommandManager:Received unknown command "?,a1d"
+WARNING:commanduino.CommandManager:Received unknown command "?,a1d"
+INFO:commanduino.CommandManager:Device "analysis_wheel" with id "a1d" and of type "LINEARACCELSTEPPER" found in 0.008s
+INFO:commanduino.CommandManager:Device "analysis_wheel" with id "a1d" and of type "LINEARACCELSTEPPER" found in the register, creating it
+WARNING:commanduino.CommandManager:Received unknown command "?,hpH"
+WARNING:commanduino.CommandManager:Received unknown command "?,hpH"
+INFO:commanduino.CommandManager:Device "horz_ph" with id "hpH" and of type "LINEARACCELSTEPPER" found in 0.008s
+INFO:commanduino.CommandManager:Device "horz_ph" with id "hpH" and of type "LINEARACCELSTEPPER" found in the register, creating it
+WARNING:commanduino.CommandManager:Received unknown command "?,vpH"
+WARNING:commanduino.CommandManager:Received unknown command "?,vpH"
+INFO:commanduino.CommandManager:Device "vert_ph" with id "vpH" and of type "LINEARACCELSTEPPER" found in 0.01s
+INFO:commanduino.CommandManager:Device "vert_ph" with id "vpH" and of type "LINEARACCELSTEPPER" found in the register, creating it
+WARNING:commanduino.CommandManager:Received unknown command "?,hcond"
+WARNING:commanduino.CommandManager:Received unknown command "?,hcond"
+INFO:commanduino.CommandManager:Device "horz_cond" with id "hcond" and of type "LINEARACCELSTEPPER" found in 0.01s
+INFO:commanduino.CommandManager:Device "horz_cond" with id "hcond" and of type "LINEARACCELSTEPPER" found in the register, creating it
+WARNING:commanduino.CommandManager:Received unknown command "?,vcond"
+WARNING:commanduino.CommandManager:Received unknown command "?,vcond"
+INFO:commanduino.CommandManager:Device "vert_cond" with id "vcond" and of type "LINEARACCELSTEPPER" found in 0.01s
+INFO:commanduino.CommandManager:Device "vert_cond" with id "vcond" and of type "LINEARACCELSTEPPER" found in the register, creating it
+WARNING:commanduino.CommandManager:Received unknown command "?,hvisc"
+INFO:commanduino.CommandManager:Device "horz_visc" with id "hvisc" and of type "LINEARACCELSTEPPER" found in 0.011s
+INFO:commanduino.CommandManager:Device "horz_visc" with id "hvisc" and of type "LINEARACCELSTEPPER" found in the register, creating it
+WARNING:commanduino.CommandManager:Received unknown command "?,vvisc"
+INFO:commanduino.CommandManager:Device "vert_visc" with id "vvisc" and of type "LINEARACCELSTEPPER" found in 0.008s
+INFO:commanduino.CommandManager:Device "vert_visc" with id "vvisc" and of type "LINEARACCELSTEPPER" found in the register, creating it
+WARNING:commanduino.CommandManager:Received unknown command "?,vturb"
+INFO:commanduino.CommandManager:Device "vert_turb" with id "vturb" and of type "LINEARACCELSTEPPER" found in 0.01s
+INFO:commanduino.CommandManager:Device "vert_turb" with id "vturb" and of type "LINEARACCELSTEPPER" found in the register, creating it
+WARNING:commanduino.CommandManager:Received unknown command "?,a2fans"
+INFO:commanduino.CommandManager:Device "a2_fans" with id "a2fans" and of type "ANALOGWRITE" found in 0.01s
+INFO:commanduino.CommandManager:Device "a2_fans" with id "a2fans" and of type "ANALOGWRITE" found in the register, creating it
+WARNING:commanduino.CommandManager:Received unknown command "?,dfans"
+INFO:commanduino.CommandManager:Device "drying_fans" with id "dfans" and of type "ANALOGWRITE" found in 0.01s
+INFO:commanduino.CommandManager:Device "drying_fans" with id "dfans" and of type "ANALOGWRITE" found in the register, creating it
+INFO:commanduino.CommandManager:Device "dispense_wheel" with id "wd" and of type "LINEARACCELSTEPPER" found in 0.008s
+INFO:commanduino.CommandManager:Device "dispense_wheel" with id "wd" and of type "LINEARACCELSTEPPER" found in the register, creating it
+INFO:root:{Dipsensing condition 0
+INFO:commanduino.CommandManager:Found CommandManager on port "/dev/cu.usbmodem141411", init time was 1.008 seconds
+INFO:commanduino.CommandManager:Found CommandManager on port "/dev/tty.usbmodem141441", init time was 1.006 seconds
+INFO:commanduino.CommandManager:Found CommandManager on port "/dev/cu.usbmodem141431", init time was 1.005 seconds
+WARNING:commanduino.CommandManager:Port /dev/tty.usbmodem141431 was not found
+WARNING:commanduino.CommandManager:Received unknown command "?,a1d"
+WARNING:commanduino.CommandManager:Received unknown command "?,a1d"
+INFO:commanduino.CommandManager:Device "analysis_wheel" with id "a1d" and of type "LINEARACCELSTEPPER" found in 0.009s
+INFO:commanduino.CommandManager:Device "analysis_wheel" with id "a1d" and of type "LINEARACCELSTEPPER" found in the register, creating it
+WARNING:commanduino.CommandManager:Received unknown command "?,hpH"
+WARNING:commanduino.CommandManager:Received unknown command "?,hpH"
+INFO:commanduino.CommandManager:Device "horz_ph" with id "hpH" and of type "LINEARACCELSTEPPER" found in 0.009s
+INFO:commanduino.CommandManager:Device "horz_ph" with id "hpH" and of type "LINEARACCELSTEPPER" found in the register, creating it
+WARNING:commanduino.CommandManager:Received unknown command "?,vpH"
+WARNING:commanduino.CommandManager:Received unknown command "?,vpH"
+INFO:commanduino.CommandManager:Device "vert_ph" with id "vpH" and of type "LINEARACCELSTEPPER" found in 0.008s
+INFO:commanduino.CommandManager:Device "vert_ph" with id "vpH" and of type "LINEARACCELSTEPPER" found in the register, creating it
+WARNING:commanduino.CommandManager:Received unknown command "?,hcond"
+WARNING:commanduino.CommandManager:Received unknown command "?,hcond"
+INFO:commanduino.CommandManager:Device "horz_cond" with id "hcond" and of type "LINEARACCELSTEPPER" found in 0.007s
+INFO:commanduino.CommandManager:Device "horz_cond" with id "hcond" and of type "LINEARACCELSTEPPER" found in the register, creating it
+WARNING:commanduino.CommandManager:Received unknown command "?,vcond"
+WARNING:commanduino.CommandManager:Received unknown command "?,vcond"
+INFO:commanduino.CommandManager:Device "vert_cond" with id "vcond" and of type "LINEARACCELSTEPPER" found in 0.01s
+INFO:commanduino.CommandManager:Device "vert_cond" with id "vcond" and of type "LINEARACCELSTEPPER" found in the register, creating it
+WARNING:commanduino.CommandManager:Received unknown command "?,hvisc"
+INFO:commanduino.CommandManager:Device "horz_visc" with id "hvisc" and of type "LINEARACCELSTEPPER" found in 0.01s
+INFO:commanduino.CommandManager:Device "horz_visc" with id "hvisc" and of type "LINEARACCELSTEPPER" found in the register, creating it
+WARNING:commanduino.CommandManager:Received unknown command "?,vvisc"
+INFO:commanduino.CommandManager:Device "vert_visc" with id "vvisc" and of type "LINEARACCELSTEPPER" found in 0.01s
+INFO:commanduino.CommandManager:Device "vert_visc" with id "vvisc" and of type "LINEARACCELSTEPPER" found in the register, creating it
+WARNING:commanduino.CommandManager:Received unknown command "?,vturb"
+INFO:commanduino.CommandManager:Device "vert_turb" with id "vturb" and of type "LINEARACCELSTEPPER" found in 0.009s
+INFO:commanduino.CommandManager:Device "vert_turb" with id "vturb" and of type "LINEARACCELSTEPPER" found in the register, creating it
+WARNING:commanduino.CommandManager:Received unknown command "?,a2fans"
+INFO:commanduino.CommandManager:Device "a2_fans" with id "a2fans" and of type "ANALOGWRITE" found in 0.01s
+INFO:commanduino.CommandManager:Device "a2_fans" with id "a2fans" and of type "ANALOGWRITE" found in the register, creating it
+WARNING:commanduino.CommandManager:Received unknown command "?,dfans"
+INFO:commanduino.CommandManager:Device "drying_fans" with id "dfans" and of type "ANALOGWRITE" found in 0.01s
+INFO:commanduino.CommandManager:Device "drying_fans" with id "dfans" and of type "ANALOGWRITE" found in the register, creating it
+INFO:commanduino.CommandManager:Device "dispense_wheel" with id "wd" and of type "LINEARACCELSTEPPER" found in 0.009s
+INFO:commanduino.CommandManager:Device "dispense_wheel" with id "wd" and of type "LINEARACCELSTEPPER" found in the register, creating it
+INFO:root:{Dipsensing condition 0
+INFO:commanduino.CommandManager:Found CommandManager on port "/dev/cu.usbmodem141411", init time was 1.005 seconds
+INFO:commanduino.CommandManager:Found CommandManager on port "/dev/tty.usbmodem141441", init time was 1.006 seconds
+INFO:commanduino.CommandManager:Found CommandManager on port "/dev/cu.usbmodem141431", init time was 1.005 seconds
+WARNING:commanduino.CommandManager:Port /dev/tty.usbmodem141431 was not found
+WARNING:commanduino.CommandManager:Received unknown command "?,a1d"
+WARNING:commanduino.CommandManager:Received unknown command "?,a1d"
+INFO:commanduino.CommandManager:Device "analysis_wheel" with id "a1d" and of type "LINEARACCELSTEPPER" found in 0.01s
+INFO:commanduino.CommandManager:Device "analysis_wheel" with id "a1d" and of type "LINEARACCELSTEPPER" found in the register, creating it
+WARNING:commanduino.CommandManager:Received unknown command "?,hpH"
+WARNING:commanduino.CommandManager:Received unknown command "?,hpH"
+INFO:commanduino.CommandManager:Device "horz_ph" with id "hpH" and of type "LINEARACCELSTEPPER" found in 0.009s
+INFO:commanduino.CommandManager:Device "horz_ph" with id "hpH" and of type "LINEARACCELSTEPPER" found in the register, creating it
+WARNING:commanduino.CommandManager:Received unknown command "?,vpH"
+WARNING:commanduino.CommandManager:Received unknown command "?,vpH"
+INFO:commanduino.CommandManager:Device "vert_ph" with id "vpH" and of type "LINEARACCELSTEPPER" found in 0.01s
+INFO:commanduino.CommandManager:Device "vert_ph" with id "vpH" and of type "LINEARACCELSTEPPER" found in the register, creating it
+WARNING:commanduino.CommandManager:Received unknown command "?,hcond"
+WARNING:commanduino.CommandManager:Received unknown command "?,hcond"
+INFO:commanduino.CommandManager:Device "horz_cond" with id "hcond" and of type "LINEARACCELSTEPPER" found in 0.011s
+INFO:commanduino.CommandManager:Device "horz_cond" with id "hcond" and of type "LINEARACCELSTEPPER" found in the register, creating it
+WARNING:commanduino.CommandManager:Received unknown command "?,vcond"
+WARNING:commanduino.CommandManager:Received unknown command "?,vcond"
+INFO:commanduino.CommandManager:Device "vert_cond" with id "vcond" and of type "LINEARACCELSTEPPER" found in 0.01s
+INFO:commanduino.CommandManager:Device "vert_cond" with id "vcond" and of type "LINEARACCELSTEPPER" found in the register, creating it
+WARNING:commanduino.CommandManager:Received unknown command "?,hvisc"
+INFO:commanduino.CommandManager:Device "horz_visc" with id "hvisc" and of type "LINEARACCELSTEPPER" found in 0.01s
+INFO:commanduino.CommandManager:Device "horz_visc" with id "hvisc" and of type "LINEARACCELSTEPPER" found in the register, creating it
+WARNING:commanduino.CommandManager:Received unknown command "?,vvisc"
+INFO:commanduino.CommandManager:Device "vert_visc" with id "vvisc" and of type "LINEARACCELSTEPPER" found in 0.01s
+INFO:commanduino.CommandManager:Device "vert_visc" with id "vvisc" and of type "LINEARACCELSTEPPER" found in the register, creating it
+WARNING:commanduino.CommandManager:Received unknown command "?,vturb"
+INFO:commanduino.CommandManager:Device "vert_turb" with id "vturb" and of type "LINEARACCELSTEPPER" found in 0.01s
+INFO:commanduino.CommandManager:Device "vert_turb" with id "vturb" and of type "LINEARACCELSTEPPER" found in the register, creating it
+WARNING:commanduino.CommandManager:Received unknown command "?,a2fans"
+INFO:commanduino.CommandManager:Device "a2_fans" with id "a2fans" and of type "ANALOGWRITE" found in 0.009s
+INFO:commanduino.CommandManager:Device "a2_fans" with id "a2fans" and of type "ANALOGWRITE" found in the register, creating it
+WARNING:commanduino.CommandManager:Received unknown command "?,dfans"
+INFO:commanduino.CommandManager:Device "drying_fans" with id "dfans" and of type "ANALOGWRITE" found in 0.008s
+INFO:commanduino.CommandManager:Device "drying_fans" with id "dfans" and of type "ANALOGWRITE" found in the register, creating it
+INFO:commanduino.CommandManager:Device "dispense_wheel" with id "wd" and of type "LINEARACCELSTEPPER" found in 0.008s
+INFO:commanduino.CommandManager:Device "dispense_wheel" with id "wd" and of type "LINEARACCELSTEPPER" found in the register, creating it
+INFO:commanduino.CommandManager:Found CommandManager on port "/dev/cu.usbmodem141411", init time was 1.006 seconds
+INFO:commanduino.CommandManager:Found CommandManager on port "/dev/tty.usbmodem141441", init time was 1.008 seconds
+INFO:commanduino.CommandManager:Found CommandManager on port "/dev/cu.usbmodem141431", init time was 1.005 seconds
+WARNING:commanduino.CommandManager:Port /dev/tty.usbmodem141431 was not found
+WARNING:commanduino.CommandManager:Received unknown command "?,a1d"
+WARNING:commanduino.CommandManager:Received unknown command "?,a1d"
+INFO:commanduino.CommandManager:Device "analysis_wheel" with id "a1d" and of type "LINEARACCELSTEPPER" found in 0.01s
+INFO:commanduino.CommandManager:Device "analysis_wheel" with id "a1d" and of type "LINEARACCELSTEPPER" found in the register, creating it
+WARNING:commanduino.CommandManager:Received unknown command "?,hpH"
+WARNING:commanduino.CommandManager:Received unknown command "?,hpH"
+INFO:commanduino.CommandManager:Device "horz_ph" with id "hpH" and of type "LINEARACCELSTEPPER" found in 0.01s
+INFO:commanduino.CommandManager:Device "horz_ph" with id "hpH" and of type "LINEARACCELSTEPPER" found in the register, creating it
+WARNING:commanduino.CommandManager:Received unknown command "?,vpH"
+WARNING:commanduino.CommandManager:Received unknown command "?,vpH"
+INFO:commanduino.CommandManager:Device "vert_ph" with id "vpH" and of type "LINEARACCELSTEPPER" found in 0.01s
+INFO:commanduino.CommandManager:Device "vert_ph" with id "vpH" and of type "LINEARACCELSTEPPER" found in the register, creating it
+WARNING:commanduino.CommandManager:Received unknown command "?,hcond"
+WARNING:commanduino.CommandManager:Received unknown command "?,hcond"
+INFO:commanduino.CommandManager:Device "horz_cond" with id "hcond" and of type "LINEARACCELSTEPPER" found in 0.01s
+INFO:commanduino.CommandManager:Device "horz_cond" with id "hcond" and of type "LINEARACCELSTEPPER" found in the register, creating it
+WARNING:commanduino.CommandManager:Received unknown command "?,vcond"
+WARNING:commanduino.CommandManager:Received unknown command "?,vcond"
+INFO:commanduino.CommandManager:Device "vert_cond" with id "vcond" and of type "LINEARACCELSTEPPER" found in 0.01s
+INFO:commanduino.CommandManager:Device "vert_cond" with id "vcond" and of type "LINEARACCELSTEPPER" found in the register, creating it
+WARNING:commanduino.CommandManager:Received unknown command "?,hvisc"
+INFO:commanduino.CommandManager:Device "horz_visc" with id "hvisc" and of type "LINEARACCELSTEPPER" found in 0.01s
+INFO:commanduino.CommandManager:Device "horz_visc" with id "hvisc" and of type "LINEARACCELSTEPPER" found in the register, creating it
+WARNING:commanduino.CommandManager:Received unknown command "?,vvisc"
+INFO:commanduino.CommandManager:Device "vert_visc" with id "vvisc" and of type "LINEARACCELSTEPPER" found in 0.009s
+INFO:commanduino.CommandManager:Device "vert_visc" with id "vvisc" and of type "LINEARACCELSTEPPER" found in the register, creating it
+WARNING:commanduino.CommandManager:Received unknown command "?,vturb"
+INFO:commanduino.CommandManager:Device "vert_turb" with id "vturb" and of type "LINEARACCELSTEPPER" found in 0.01s
+INFO:commanduino.CommandManager:Device "vert_turb" with id "vturb" and of type "LINEARACCELSTEPPER" found in the register, creating it
+WARNING:commanduino.CommandManager:Received unknown command "?,a2fans"
+INFO:commanduino.CommandManager:Device "a2_fans" with id "a2fans" and of type "ANALOGWRITE" found in 0.01s
+INFO:commanduino.CommandManager:Device "a2_fans" with id "a2fans" and of type "ANALOGWRITE" found in the register, creating it
+WARNING:commanduino.CommandManager:Received unknown command "?,dfans"
+INFO:commanduino.CommandManager:Device "drying_fans" with id "dfans" and of type "ANALOGWRITE" found in 0.009s
+INFO:commanduino.CommandManager:Device "drying_fans" with id "dfans" and of type "ANALOGWRITE" found in the register, creating it
+INFO:commanduino.CommandManager:Device "dispense_wheel" with id "wd" and of type "LINEARACCELSTEPPER" found in 0.007s
+INFO:commanduino.CommandManager:Device "dispense_wheel" with id "wd" and of type "LINEARACCELSTEPPER" found in the register, creating it
+INFO:commanduino.CommandManager:Found CommandManager on port "/dev/cu.usbmodem141411", init time was 1.006 seconds
+INFO:commanduino.CommandManager:Found CommandManager on port "/dev/tty.usbmodem141441", init time was 1.007 seconds
+INFO:commanduino.CommandManager:Found CommandManager on port "/dev/cu.usbmodem141431", init time was 1.005 seconds
+WARNING:commanduino.CommandManager:Port /dev/tty.usbmodem141431 was not found
+WARNING:commanduino.CommandManager:Received unknown command "?,a1d"
+WARNING:commanduino.CommandManager:Received unknown command "?,a1d"
+INFO:commanduino.CommandManager:Device "analysis_wheel" with id "a1d" and of type "LINEARACCELSTEPPER" found in 0.009s
+INFO:commanduino.CommandManager:Device "analysis_wheel" with id "a1d" and of type "LINEARACCELSTEPPER" found in the register, creating it
+WARNING:commanduino.CommandManager:Received unknown command "?,hpH"
+WARNING:commanduino.CommandManager:Received unknown command "?,hpH"
+INFO:commanduino.CommandManager:Device "horz_ph" with id "hpH" and of type "LINEARACCELSTEPPER" found in 0.01s
+INFO:commanduino.CommandManager:Device "horz_ph" with id "hpH" and of type "LINEARACCELSTEPPER" found in the register, creating it
+WARNING:commanduino.CommandManager:Received unknown command "?,vpH"
+WARNING:commanduino.CommandManager:Received unknown command "?,vpH"
+INFO:commanduino.CommandManager:Device "vert_ph" with id "vpH" and of type "LINEARACCELSTEPPER" found in 0.01s
+INFO:commanduino.CommandManager:Device "vert_ph" with id "vpH" and of type "LINEARACCELSTEPPER" found in the register, creating it
+WARNING:commanduino.CommandManager:Received unknown command "?,hcond"
+WARNING:commanduino.CommandManager:Received unknown command "?,hcond"
+INFO:commanduino.CommandManager:Device "horz_cond" with id "hcond" and of type "LINEARACCELSTEPPER" found in 0.007s
+INFO:commanduino.CommandManager:Device "horz_cond" with id "hcond" and of type "LINEARACCELSTEPPER" found in the register, creating it
+WARNING:commanduino.CommandManager:Received unknown command "?,vcond"
+WARNING:commanduino.CommandManager:Received unknown command "?,vcond"
+INFO:commanduino.CommandManager:Device "vert_cond" with id "vcond" and of type "LINEARACCELSTEPPER" found in 0.011s
+INFO:commanduino.CommandManager:Device "vert_cond" with id "vcond" and of type "LINEARACCELSTEPPER" found in the register, creating it
+WARNING:commanduino.CommandManager:Received unknown command "?,hvisc"
+INFO:commanduino.CommandManager:Device "horz_visc" with id "hvisc" and of type "LINEARACCELSTEPPER" found in 0.009s
+INFO:commanduino.CommandManager:Device "horz_visc" with id "hvisc" and of type "LINEARACCELSTEPPER" found in the register, creating it
+WARNING:commanduino.CommandManager:Received unknown command "?,vvisc"
+INFO:commanduino.CommandManager:Device "vert_visc" with id "vvisc" and of type "LINEARACCELSTEPPER" found in 0.009s
+INFO:commanduino.CommandManager:Device "vert_visc" with id "vvisc" and of type "LINEARACCELSTEPPER" found in the register, creating it
+WARNING:commanduino.CommandManager:Received unknown command "?,vturb"
+INFO:commanduino.CommandManager:Device "vert_turb" with id "vturb" and of type "LINEARACCELSTEPPER" found in 0.01s
+INFO:commanduino.CommandManager:Device "vert_turb" with id "vturb" and of type "LINEARACCELSTEPPER" found in the register, creating it
+WARNING:commanduino.CommandManager:Received unknown command "?,a2fans"
+INFO:commanduino.CommandManager:Device "a2_fans" with id "a2fans" and of type "ANALOGWRITE" found in 0.008s
+INFO:commanduino.CommandManager:Device "a2_fans" with id "a2fans" and of type "ANALOGWRITE" found in the register, creating it
+WARNING:commanduino.CommandManager:Received unknown command "?,dfans"
+INFO:commanduino.CommandManager:Device "drying_fans" with id "dfans" and of type "ANALOGWRITE" found in 0.01s
+INFO:commanduino.CommandManager:Device "drying_fans" with id "dfans" and of type "ANALOGWRITE" found in the register, creating it
+INFO:commanduino.CommandManager:Device "dispense_wheel" with id "wd" and of type "LINEARACCELSTEPPER" found in 0.007s
+INFO:commanduino.CommandManager:Device "dispense_wheel" with id "wd" and of type "LINEARACCELSTEPPER" found in the register, creating it
+INFO:commanduino.CommandManager:Found CommandManager on port "/dev/cu.usbmodem141411", init time was 1.004 seconds
+INFO:commanduino.CommandManager:Found CommandManager on port "/dev/tty.usbmodem141441", init time was 1.007 seconds
+INFO:commanduino.CommandManager:Found CommandManager on port "/dev/cu.usbmodem141431", init time was 1.005 seconds
+WARNING:commanduino.CommandManager:Port /dev/tty.usbmodem141431 was not found
+WARNING:commanduino.CommandManager:Received unknown command "?,a1d"
+WARNING:commanduino.CommandManager:Received unknown command "?,a1d"
+INFO:commanduino.CommandManager:Device "analysis_wheel" with id "a1d" and of type "LINEARACCELSTEPPER" found in 0.01s
+INFO:commanduino.CommandManager:Device "analysis_wheel" with id "a1d" and of type "LINEARACCELSTEPPER" found in the register, creating it
+WARNING:commanduino.CommandManager:Received unknown command "?,hpH"
+WARNING:commanduino.CommandManager:Received unknown command "?,hpH"
+INFO:commanduino.CommandManager:Device "horz_ph" with id "hpH" and of type "LINEARACCELSTEPPER" found in 0.011s
+INFO:commanduino.CommandManager:Device "horz_ph" with id "hpH" and of type "LINEARACCELSTEPPER" found in the register, creating it
+WARNING:commanduino.CommandManager:Received unknown command "?,vpH"
+WARNING:commanduino.CommandManager:Received unknown command "?,vpH"
+INFO:commanduino.CommandManager:Device "vert_ph" with id "vpH" and of type "LINEARACCELSTEPPER" found in 0.008s
+INFO:commanduino.CommandManager:Device "vert_ph" with id "vpH" and of type "LINEARACCELSTEPPER" found in the register, creating it
+WARNING:commanduino.CommandManager:Received unknown command "?,hcond"
+WARNING:commanduino.CommandManager:Received unknown command "?,hcond"
+INFO:commanduino.CommandManager:Device "horz_cond" with id "hcond" and of type "LINEARACCELSTEPPER" found in 0.01s
+INFO:commanduino.CommandManager:Device "horz_cond" with id "hcond" and of type "LINEARACCELSTEPPER" found in the register, creating it
+WARNING:commanduino.CommandManager:Received unknown command "?,vcond"
+WARNING:commanduino.CommandManager:Received unknown command "?,vcond"
+INFO:commanduino.CommandManager:Device "vert_cond" with id "vcond" and of type "LINEARACCELSTEPPER" found in 0.01s
+INFO:commanduino.CommandManager:Device "vert_cond" with id "vcond" and of type "LINEARACCELSTEPPER" found in the register, creating it
+WARNING:commanduino.CommandManager:Received unknown command "?,hvisc"
+INFO:commanduino.CommandManager:Device "horz_visc" with id "hvisc" and of type "LINEARACCELSTEPPER" found in 0.011s
+INFO:commanduino.CommandManager:Device "horz_visc" with id "hvisc" and of type "LINEARACCELSTEPPER" found in the register, creating it
+WARNING:commanduino.CommandManager:Received unknown command "?,vvisc"
+INFO:commanduino.CommandManager:Device "vert_visc" with id "vvisc" and of type "LINEARACCELSTEPPER" found in 0.01s
+INFO:commanduino.CommandManager:Device "vert_visc" with id "vvisc" and of type "LINEARACCELSTEPPER" found in the register, creating it
+WARNING:commanduino.CommandManager:Received unknown command "?,vturb"
+INFO:commanduino.CommandManager:Device "vert_turb" with id "vturb" and of type "LINEARACCELSTEPPER" found in 0.01s
+INFO:commanduino.CommandManager:Device "vert_turb" with id "vturb" and of type "LINEARACCELSTEPPER" found in the register, creating it
+WARNING:commanduino.CommandManager:Received unknown command "?,a2fans"
+INFO:commanduino.CommandManager:Device "a2_fans" with id "a2fans" and of type "ANALOGWRITE" found in 0.01s
+INFO:commanduino.CommandManager:Device "a2_fans" with id "a2fans" and of type "ANALOGWRITE" found in the register, creating it
+WARNING:commanduino.CommandManager:Received unknown command "?,dfans"
+INFO:commanduino.CommandManager:Device "drying_fans" with id "dfans" and of type "ANALOGWRITE" found in 0.007s
+INFO:commanduino.CommandManager:Device "drying_fans" with id "dfans" and of type "ANALOGWRITE" found in the register, creating it
+INFO:commanduino.CommandManager:Device "dispense_wheel" with id "wd" and of type "LINEARACCELSTEPPER" found in 0.009s
+INFO:commanduino.CommandManager:Device "dispense_wheel" with id "wd" and of type "LINEARACCELSTEPPER" found in the register, creating it
+INFO:commanduino.CommandManager:Found CommandManager on port "/dev/cu.usbmodem141411", init time was 1.008 seconds
+INFO:commanduino.CommandManager:Found CommandManager on port "/dev/tty.usbmodem141441", init time was 1.007 seconds
+INFO:commanduino.CommandManager:Found CommandManager on port "/dev/cu.usbmodem141431", init time was 1.01 seconds
+WARNING:commanduino.CommandManager:Port /dev/tty.usbmodem141431 was not found
+WARNING:commanduino.CommandManager:Received unknown command "?,a1d"
+WARNING:commanduino.CommandManager:Received unknown command "?,a1d"
+INFO:commanduino.CommandManager:Device "analysis_wheel" with id "a1d" and of type "LINEARACCELSTEPPER" found in 0.009s
+INFO:commanduino.CommandManager:Device "analysis_wheel" with id "a1d" and of type "LINEARACCELSTEPPER" found in the register, creating it
+WARNING:commanduino.CommandManager:Received unknown command "?,hpH"
+WARNING:commanduino.CommandManager:Received unknown command "?,hpH"
+INFO:commanduino.CommandManager:Device "horz_ph" with id "hpH" and of type "LINEARACCELSTEPPER" found in 0.007s
+INFO:commanduino.CommandManager:Device "horz_ph" with id "hpH" and of type "LINEARACCELSTEPPER" found in the register, creating it
+WARNING:commanduino.CommandManager:Received unknown command "?,vpH"
+WARNING:commanduino.CommandManager:Received unknown command "?,vpH"
+INFO:commanduino.CommandManager:Device "vert_ph" with id "vpH" and of type "LINEARACCELSTEPPER" found in 0.007s
+INFO:commanduino.CommandManager:Device "vert_ph" with id "vpH" and of type "LINEARACCELSTEPPER" found in the register, creating it
+WARNING:commanduino.CommandManager:Received unknown command "?,hcond"
+WARNING:commanduino.CommandManager:Received unknown command "?,hcond"
+INFO:commanduino.CommandManager:Device "horz_cond" with id "hcond" and of type "LINEARACCELSTEPPER" found in 0.01s
+INFO:commanduino.CommandManager:Device "horz_cond" with id "hcond" and of type "LINEARACCELSTEPPER" found in the register, creating it
+WARNING:commanduino.CommandManager:Received unknown command "?,vcond"
+WARNING:commanduino.CommandManager:Received unknown command "?,vcond"
+INFO:commanduino.CommandManager:Device "vert_cond" with id "vcond" and of type "LINEARACCELSTEPPER" found in 0.01s
+INFO:commanduino.CommandManager:Device "vert_cond" with id "vcond" and of type "LINEARACCELSTEPPER" found in the register, creating it
+WARNING:commanduino.CommandManager:Received unknown command "?,hvisc"
+INFO:commanduino.CommandManager:Device "horz_visc" with id "hvisc" and of type "LINEARACCELSTEPPER" found in 0.01s
+INFO:commanduino.CommandManager:Device "horz_visc" with id "hvisc" and of type "LINEARACCELSTEPPER" found in the register, creating it
+WARNING:commanduino.CommandManager:Received unknown command "?,vvisc"
+INFO:commanduino.CommandManager:Device "vert_visc" with id "vvisc" and of type "LINEARACCELSTEPPER" found in 0.01s
+INFO:commanduino.CommandManager:Device "vert_visc" with id "vvisc" and of type "LINEARACCELSTEPPER" found in the register, creating it
+WARNING:commanduino.CommandManager:Received unknown command "?,vturb"
+INFO:commanduino.CommandManager:Device "vert_turb" with id "vturb" and of type "LINEARACCELSTEPPER" found in 0.01s
+INFO:commanduino.CommandManager:Device "vert_turb" with id "vturb" and of type "LINEARACCELSTEPPER" found in the register, creating it
+WARNING:commanduino.CommandManager:Received unknown command "?,a2fans"
+INFO:commanduino.CommandManager:Device "a2_fans" with id "a2fans" and of type "ANALOGWRITE" found in 0.009s
+INFO:commanduino.CommandManager:Device "a2_fans" with id "a2fans" and of type "ANALOGWRITE" found in the register, creating it
+WARNING:commanduino.CommandManager:Received unknown command "?,dfans"
+INFO:commanduino.CommandManager:Device "drying_fans" with id "dfans" and of type "ANALOGWRITE" found in 0.01s
+INFO:commanduino.CommandManager:Device "drying_fans" with id "dfans" and of type "ANALOGWRITE" found in the register, creating it
+INFO:commanduino.CommandManager:Device "dispense_wheel" with id "wd" and of type "LINEARACCELSTEPPER" found in 0.008s
+INFO:commanduino.CommandManager:Device "dispense_wheel" with id "wd" and of type "LINEARACCELSTEPPER" found in the register, creating it
+INFO:commanduino.CommandManager:Found CommandManager on port "/dev/cu.usbmodem141411", init time was 1.008 seconds
+INFO:commanduino.CommandManager:Found CommandManager on port "/dev/tty.usbmodem141441", init time was 1.008 seconds
+INFO:commanduino.CommandManager:Found CommandManager on port "/dev/cu.usbmodem141431", init time was 1.006 seconds
+WARNING:commanduino.CommandManager:Port /dev/tty.usbmodem141431 was not found
+WARNING:commanduino.CommandManager:Received unknown command "?,a1d"
+WARNING:commanduino.CommandManager:Received unknown command "?,a1d"
+INFO:commanduino.CommandManager:Device "analysis_wheel" with id "a1d" and of type "LINEARACCELSTEPPER" found in 0.009s
+INFO:commanduino.CommandManager:Device "analysis_wheel" with id "a1d" and of type "LINEARACCELSTEPPER" found in the register, creating it
+WARNING:commanduino.CommandManager:Received unknown command "?,hpH"
+WARNING:commanduino.CommandManager:Received unknown command "?,hpH"
+INFO:commanduino.CommandManager:Device "horz_ph" with id "hpH" and of type "LINEARACCELSTEPPER" found in 0.007s
+INFO:commanduino.CommandManager:Device "horz_ph" with id "hpH" and of type "LINEARACCELSTEPPER" found in the register, creating it
+WARNING:commanduino.CommandManager:Received unknown command "?,vpH"
+WARNING:commanduino.CommandManager:Received unknown command "?,vpH"
+INFO:commanduino.CommandManager:Device "vert_ph" with id "vpH" and of type "LINEARACCELSTEPPER" found in 0.011s
+INFO:commanduino.CommandManager:Device "vert_ph" with id "vpH" and of type "LINEARACCELSTEPPER" found in the register, creating it
+WARNING:commanduino.CommandManager:Received unknown command "?,hcond"
+WARNING:commanduino.CommandManager:Received unknown command "?,hcond"
+INFO:commanduino.CommandManager:Device "horz_cond" with id "hcond" and of type "LINEARACCELSTEPPER" found in 0.01s
+INFO:commanduino.CommandManager:Device "horz_cond" with id "hcond" and of type "LINEARACCELSTEPPER" found in the register, creating it
+WARNING:commanduino.CommandManager:Received unknown command "?,vcond"
+WARNING:commanduino.CommandManager:Received unknown command "?,vcond"
+INFO:commanduino.CommandManager:Device "vert_cond" with id "vcond" and of type "LINEARACCELSTEPPER" found in 0.011s
+INFO:commanduino.CommandManager:Device "vert_cond" with id "vcond" and of type "LINEARACCELSTEPPER" found in the register, creating it
+WARNING:commanduino.CommandManager:Received unknown command "?,hvisc"
+INFO:commanduino.CommandManager:Device "horz_visc" with id "hvisc" and of type "LINEARACCELSTEPPER" found in 0.01s
+INFO:commanduino.CommandManager:Device "horz_visc" with id "hvisc" and of type "LINEARACCELSTEPPER" found in the register, creating it
+WARNING:commanduino.CommandManager:Received unknown command "?,vvisc"
+INFO:commanduino.CommandManager:Device "vert_visc" with id "vvisc" and of type "LINEARACCELSTEPPER" found in 0.01s
+INFO:commanduino.CommandManager:Device "vert_visc" with id "vvisc" and of type "LINEARACCELSTEPPER" found in the register, creating it
+WARNING:commanduino.CommandManager:Received unknown command "?,vturb"
+INFO:commanduino.CommandManager:Device "vert_turb" with id "vturb" and of type "LINEARACCELSTEPPER" found in 0.009s
+INFO:commanduino.CommandManager:Device "vert_turb" with id "vturb" and of type "LINEARACCELSTEPPER" found in the register, creating it
+WARNING:commanduino.CommandManager:Received unknown command "?,a2fans"
+INFO:commanduino.CommandManager:Device "a2_fans" with id "a2fans" and of type "ANALOGWRITE" found in 0.01s
+INFO:commanduino.CommandManager:Device "a2_fans" with id "a2fans" and of type "ANALOGWRITE" found in the register, creating it
+WARNING:commanduino.CommandManager:Received unknown command "?,dfans"
+INFO:commanduino.CommandManager:Device "drying_fans" with id "dfans" and of type "ANALOGWRITE" found in 0.008s
+INFO:commanduino.CommandManager:Device "drying_fans" with id "dfans" and of type "ANALOGWRITE" found in the register, creating it
+INFO:commanduino.CommandManager:Device "dispense_wheel" with id "wd" and of type "LINEARACCELSTEPPER" found in 0.01s
+INFO:commanduino.CommandManager:Device "dispense_wheel" with id "wd" and of type "LINEARACCELSTEPPER" found in the register, creating it
+INFO:root:{Dipsensing condition 0
+INFO:commanduino.CommandManager:Found CommandManager on port "/dev/cu.usbmodem141411", init time was 1.006 seconds
+INFO:commanduino.CommandManager:Found CommandManager on port "/dev/tty.usbmodem141441", init time was 1.008 seconds
+INFO:commanduino.CommandManager:Found CommandManager on port "/dev/cu.usbmodem141431", init time was 1.008 seconds
+WARNING:commanduino.CommandManager:Port /dev/tty.usbmodem141431 was not found
+WARNING:commanduino.CommandManager:Received unknown command "?,a1d"
+WARNING:commanduino.CommandManager:Received unknown command "?,a1d"
+INFO:commanduino.CommandManager:Device "analysis_wheel" with id "a1d" and of type "LINEARACCELSTEPPER" found in 0.008s
+INFO:commanduino.CommandManager:Device "analysis_wheel" with id "a1d" and of type "LINEARACCELSTEPPER" found in the register, creating it
+WARNING:commanduino.CommandManager:Received unknown command "?,hpH"
+WARNING:commanduino.CommandManager:Received unknown command "?,hpH"
+INFO:commanduino.CommandManager:Device "horz_ph" with id "hpH" and of type "LINEARACCELSTEPPER" found in 0.01s
+INFO:commanduino.CommandManager:Device "horz_ph" with id "hpH" and of type "LINEARACCELSTEPPER" found in the register, creating it
+WARNING:commanduino.CommandManager:Received unknown command "?,vpH"
+WARNING:commanduino.CommandManager:Received unknown command "?,vpH"
+INFO:commanduino.CommandManager:Device "vert_ph" with id "vpH" and of type "LINEARACCELSTEPPER" found in 0.011s
+INFO:commanduino.CommandManager:Device "vert_ph" with id "vpH" and of type "LINEARACCELSTEPPER" found in the register, creating it
+WARNING:commanduino.CommandManager:Received unknown command "?,hcond"
+WARNING:commanduino.CommandManager:Received unknown command "?,hcond"
+INFO:commanduino.CommandManager:Device "horz_cond" with id "hcond" and of type "LINEARACCELSTEPPER" found in 0.008s
+INFO:commanduino.CommandManager:Device "horz_cond" with id "hcond" and of type "LINEARACCELSTEPPER" found in the register, creating it
+WARNING:commanduino.CommandManager:Received unknown command "?,vcond"
+WARNING:commanduino.CommandManager:Received unknown command "?,vcond"
+INFO:commanduino.CommandManager:Device "vert_cond" with id "vcond" and of type "LINEARACCELSTEPPER" found in 0.01s
+INFO:commanduino.CommandManager:Device "vert_cond" with id "vcond" and of type "LINEARACCELSTEPPER" found in the register, creating it
+WARNING:commanduino.CommandManager:Received unknown command "?,hvisc"
+INFO:commanduino.CommandManager:Device "horz_visc" with id "hvisc" and of type "LINEARACCELSTEPPER" found in 0.009s
+INFO:commanduino.CommandManager:Device "horz_visc" with id "hvisc" and of type "LINEARACCELSTEPPER" found in the register, creating it
+WARNING:commanduino.CommandManager:Received unknown command "?,vvisc"
+INFO:commanduino.CommandManager:Device "vert_visc" with id "vvisc" and of type "LINEARACCELSTEPPER" found in 0.009s
+INFO:commanduino.CommandManager:Device "vert_visc" with id "vvisc" and of type "LINEARACCELSTEPPER" found in the register, creating it
+WARNING:commanduino.CommandManager:Received unknown command "?,vturb"
+INFO:commanduino.CommandManager:Device "vert_turb" with id "vturb" and of type "LINEARACCELSTEPPER" found in 0.01s
+INFO:commanduino.CommandManager:Device "vert_turb" with id "vturb" and of type "LINEARACCELSTEPPER" found in the register, creating it
+WARNING:commanduino.CommandManager:Received unknown command "?,a2fans"
+INFO:commanduino.CommandManager:Device "a2_fans" with id "a2fans" and of type "ANALOGWRITE" found in 0.01s
+INFO:commanduino.CommandManager:Device "a2_fans" with id "a2fans" and of type "ANALOGWRITE" found in the register, creating it
+WARNING:commanduino.CommandManager:Received unknown command "?,dfans"
+INFO:commanduino.CommandManager:Device "drying_fans" with id "dfans" and of type "ANALOGWRITE" found in 0.01s
+INFO:commanduino.CommandManager:Device "drying_fans" with id "dfans" and of type "ANALOGWRITE" found in the register, creating it
+INFO:commanduino.CommandManager:Device "dispense_wheel" with id "wd" and of type "LINEARACCELSTEPPER" found in 0.007s
+INFO:commanduino.CommandManager:Device "dispense_wheel" with id "wd" and of type "LINEARACCELSTEPPER" found in the register, creating it
+INFO:commanduino.CommandManager:Found CommandManager on port "/dev/cu.usbmodem141411", init time was 1.006 seconds
+INFO:commanduino.CommandManager:Found CommandManager on port "/dev/tty.usbmodem141441", init time was 1.006 seconds
+INFO:commanduino.CommandManager:Found CommandManager on port "/dev/cu.usbmodem141431", init time was 1.008 seconds
+WARNING:commanduino.CommandManager:Port /dev/tty.usbmodem141431 was not found
+WARNING:commanduino.CommandManager:Received unknown command "?,a1d"
+WARNING:commanduino.CommandManager:Received unknown command "?,a1d"
+INFO:commanduino.CommandManager:Device "analysis_wheel" with id "a1d" and of type "LINEARACCELSTEPPER" found in 0.008s
+INFO:commanduino.CommandManager:Device "analysis_wheel" with id "a1d" and of type "LINEARACCELSTEPPER" found in the register, creating it
+WARNING:commanduino.CommandManager:Received unknown command "?,hpH"
+WARNING:commanduino.CommandManager:Received unknown command "?,hpH"
+INFO:commanduino.CommandManager:Device "horz_ph" with id "hpH" and of type "LINEARACCELSTEPPER" found in 0.007s
+INFO:commanduino.CommandManager:Device "horz_ph" with id "hpH" and of type "LINEARACCELSTEPPER" found in the register, creating it
+WARNING:commanduino.CommandManager:Received unknown command "?,vpH"
+WARNING:commanduino.CommandManager:Received unknown command "?,vpH"
+INFO:commanduino.CommandManager:Device "vert_ph" with id "vpH" and of type "LINEARACCELSTEPPER" found in 0.007s
+INFO:commanduino.CommandManager:Device "vert_ph" with id "vpH" and of type "LINEARACCELSTEPPER" found in the register, creating it
+WARNING:commanduino.CommandManager:Received unknown command "?,hcond"
+WARNING:commanduino.CommandManager:Received unknown command "?,hcond"
+INFO:commanduino.CommandManager:Device "horz_cond" with id "hcond" and of type "LINEARACCELSTEPPER" found in 0.011s
+INFO:commanduino.CommandManager:Device "horz_cond" with id "hcond" and of type "LINEARACCELSTEPPER" found in the register, creating it
+WARNING:commanduino.CommandManager:Received unknown command "?,vcond"
+WARNING:commanduino.CommandManager:Received unknown command "?,vcond"
+INFO:commanduino.CommandManager:Device "vert_cond" with id "vcond" and of type "LINEARACCELSTEPPER" found in 0.011s
+INFO:commanduino.CommandManager:Device "vert_cond" with id "vcond" and of type "LINEARACCELSTEPPER" found in the register, creating it
+WARNING:commanduino.CommandManager:Received unknown command "?,hvisc"
+INFO:commanduino.CommandManager:Device "horz_visc" with id "hvisc" and of type "LINEARACCELSTEPPER" found in 0.011s
+INFO:commanduino.CommandManager:Device "horz_visc" with id "hvisc" and of type "LINEARACCELSTEPPER" found in the register, creating it
+WARNING:commanduino.CommandManager:Received unknown command "?,vvisc"
+INFO:commanduino.CommandManager:Device "vert_visc" with id "vvisc" and of type "LINEARACCELSTEPPER" found in 0.009s
+INFO:commanduino.CommandManager:Device "vert_visc" with id "vvisc" and of type "LINEARACCELSTEPPER" found in the register, creating it
+WARNING:commanduino.CommandManager:Received unknown command "?,vturb"
+INFO:commanduino.CommandManager:Device "vert_turb" with id "vturb" and of type "LINEARACCELSTEPPER" found in 0.01s
+INFO:commanduino.CommandManager:Device "vert_turb" with id "vturb" and of type "LINEARACCELSTEPPER" found in the register, creating it
+WARNING:commanduino.CommandManager:Received unknown command "?,a2fans"
+INFO:commanduino.CommandManager:Device "a2_fans" with id "a2fans" and of type "ANALOGWRITE" found in 0.009s
+INFO:commanduino.CommandManager:Device "a2_fans" with id "a2fans" and of type "ANALOGWRITE" found in the register, creating it
+WARNING:commanduino.CommandManager:Received unknown command "?,dfans"
+INFO:commanduino.CommandManager:Device "drying_fans" with id "dfans" and of type "ANALOGWRITE" found in 0.008s
+INFO:commanduino.CommandManager:Device "drying_fans" with id "dfans" and of type "ANALOGWRITE" found in the register, creating it
+INFO:commanduino.CommandManager:Device "dispense_wheel" with id "wd" and of type "LINEARACCELSTEPPER" found in 0.009s
+INFO:commanduino.CommandManager:Device "dispense_wheel" with id "wd" and of type "LINEARACCELSTEPPER" found in the register, creating it
+INFO:commanduino.CommandManager:Found CommandManager on port "/dev/cu.usbmodem141411", init time was 1.008 seconds
+INFO:commanduino.CommandManager:Found CommandManager on port "/dev/tty.usbmodem141441", init time was 1.01 seconds
+INFO:commanduino.CommandManager:Found CommandManager on port "/dev/cu.usbmodem141431", init time was 1.007 seconds
+WARNING:commanduino.CommandManager:Port /dev/tty.usbmodem141431 was not found
+WARNING:commanduino.CommandManager:Received unknown command "?,a1d"
+WARNING:commanduino.CommandManager:Received unknown command "?,a1d"
+INFO:commanduino.CommandManager:Device "analysis_wheel" with id "a1d" and of type "LINEARACCELSTEPPER" found in 0.01s
+INFO:commanduino.CommandManager:Device "analysis_wheel" with id "a1d" and of type "LINEARACCELSTEPPER" found in the register, creating it
+WARNING:commanduino.CommandManager:Received unknown command "?,hpH"
+WARNING:commanduino.CommandManager:Received unknown command "?,hpH"
+INFO:commanduino.CommandManager:Device "horz_ph" with id "hpH" and of type "LINEARACCELSTEPPER" found in 0.009s
+INFO:commanduino.CommandManager:Device "horz_ph" with id "hpH" and of type "LINEARACCELSTEPPER" found in the register, creating it
+WARNING:commanduino.CommandManager:Received unknown command "?,vpH"
+WARNING:commanduino.CommandManager:Received unknown command "?,vpH"
+INFO:commanduino.CommandManager:Device "vert_ph" with id "vpH" and of type "LINEARACCELSTEPPER" found in 0.011s
+INFO:commanduino.CommandManager:Device "vert_ph" with id "vpH" and of type "LINEARACCELSTEPPER" found in the register, creating it
+WARNING:commanduino.CommandManager:Received unknown command "?,hcond"
+WARNING:commanduino.CommandManager:Received unknown command "?,hcond"
+INFO:commanduino.CommandManager:Device "horz_cond" with id "hcond" and of type "LINEARACCELSTEPPER" found in 0.01s
+INFO:commanduino.CommandManager:Device "horz_cond" with id "hcond" and of type "LINEARACCELSTEPPER" found in the register, creating it
+WARNING:commanduino.CommandManager:Received unknown command "?,vcond"
+WARNING:commanduino.CommandManager:Received unknown command "?,vcond"
+INFO:commanduino.CommandManager:Device "vert_cond" with id "vcond" and of type "LINEARACCELSTEPPER" found in 0.009s
+INFO:commanduino.CommandManager:Device "vert_cond" with id "vcond" and of type "LINEARACCELSTEPPER" found in the register, creating it
+WARNING:commanduino.CommandManager:Received unknown command "?,hvisc"
+INFO:commanduino.CommandManager:Device "horz_visc" with id "hvisc" and of type "LINEARACCELSTEPPER" found in 0.009s
+INFO:commanduino.CommandManager:Device "horz_visc" with id "hvisc" and of type "LINEARACCELSTEPPER" found in the register, creating it
+WARNING:commanduino.CommandManager:Received unknown command "?,vvisc"
+INFO:commanduino.CommandManager:Device "vert_visc" with id "vvisc" and of type "LINEARACCELSTEPPER" found in 0.01s
+INFO:commanduino.CommandManager:Device "vert_visc" with id "vvisc" and of type "LINEARACCELSTEPPER" found in the register, creating it
+WARNING:commanduino.CommandManager:Received unknown command "?,vturb"
+INFO:commanduino.CommandManager:Device "vert_turb" with id "vturb" and of type "LINEARACCELSTEPPER" found in 0.009s
+INFO:commanduino.CommandManager:Device "vert_turb" with id "vturb" and of type "LINEARACCELSTEPPER" found in the register, creating it
+WARNING:commanduino.CommandManager:Received unknown command "?,a2fans"
+INFO:commanduino.CommandManager:Device "a2_fans" with id "a2fans" and of type "ANALOGWRITE" found in 0.009s
+INFO:commanduino.CommandManager:Device "a2_fans" with id "a2fans" and of type "ANALOGWRITE" found in the register, creating it
+WARNING:commanduino.CommandManager:Received unknown command "?,dfans"
+INFO:commanduino.CommandManager:Device "drying_fans" with id "dfans" and of type "ANALOGWRITE" found in 0.01s
+INFO:commanduino.CommandManager:Device "drying_fans" with id "dfans" and of type "ANALOGWRITE" found in the register, creating it
+INFO:commanduino.CommandManager:Device "dispense_wheel" with id "wd" and of type "LINEARACCELSTEPPER" found in 0.008s
+INFO:commanduino.CommandManager:Device "dispense_wheel" with id "wd" and of type "LINEARACCELSTEPPER" found in the register, creating it
+INFO:root:{Dipsensing condition 0
+INFO:root:{Dipsensing condition 1
+INFO:root:{Dipsensing condition 2

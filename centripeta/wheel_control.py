@@ -47,3 +47,10 @@ class WheelControl(CoreDevice):
         drive_wheel = self.get_device_attribute()
         for _ in range(n_turns):
             drive_wheel.move(FULL_WHEEL_TURN, wait=wait)
+
+    def home_module(self, wait=True):
+        """
+        Brings the module back to its home position
+        """
+        drive_wheel = self.get_device_attribute()
+        drive_wheel.home(wait=wait)

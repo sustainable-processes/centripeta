@@ -66,8 +66,9 @@ class Dispenser(Centripeta):
             name (str): Name of the reagent pump
             volume (int/float): Volume to dispense
         """
-        self.pumps[pump_name].pump(volume, 'I', wait=True)
-        self.pumps[pump_name].deliver(volume, 'O', wait=True)
+        self.pumps[pump_name].transfer(volume, 'I', 'O')
+        # self.pumps[pump_name].pump(volume, 'I', wait=True)
+        # self.pumps[pump_name].deliver(volume, 'O', wait=True)
 
     def turn_wheel(self, n_turns, wait=True):
         """
@@ -80,6 +81,8 @@ class Dispenser(Centripeta):
         for _ in range(n_turns):
             self.wheel.move(FULL_WHEEL_TURN, wait=wait)
 
+    def home_wheel(self, wait=True):
+        self.wheel.home(wait=wait)
 
 class Analyzer(Centripeta):
     """
