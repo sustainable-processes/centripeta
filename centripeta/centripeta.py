@@ -141,6 +141,47 @@ class Analyzer(Centripeta):
         self.a2_fans.set_pwm_value(0)
         self.drying_fans.set_pwm_value(0)
     
+    def cond_test(self):
+        """
+        cond_probe movement for conductivity analysis
+        missing the data acquisition part
+        """
+        self.vert_cond.home()
+        self.horz_cond.home()
+        # 4000 is the right step for cond_probe horizontal move to analyse
+        self.horz_cond.move_to(4000)
+        self.vert_cond.move_to(40000)
+        print('conductivity analysing')
+        time.sleep(10)
+        self.vert_cond.home()
+        time.sleep(10)
+        # 34000 is the right step for cond_probe horizontal move to clean
+        self.horz_cond.move_to(40000)
+        self.vert_cond.move_to(40000)
+        print('conductivity probe is cleaning')
+        time.sleep(10)
+        self.vert_cond.home()
+
+    def pH_test(self):
+        """
+        cond_probe movement for pH analysis
+        missing the data acquisition part
+        """
+        self.vert_ph.home()
+        self.horz_ph.home()
+        # 4000 is the right step for cond_probe horizontal move to analyse
+        self.horz_ph.move_to(4000)
+        self.vert_ph.move_to(40000)
+        print('pH analysing')
+        time.sleep(10)
+        self.vert_ph.home()
+        time.sleep(10)
+        # 34000 is the right step for cond_probe horizontal move to clean
+        self.horz_ph.move_to(40000)
+        self.vert_ph.move_to(40000)
+        print('pH probe is cleaning')
+        time.sleep(10)
+        self.vert_ph.home()
 
 def get_all_serial_ports():
     pass
