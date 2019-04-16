@@ -16,7 +16,8 @@
     "pumps": {
         "sample": {
             "switch": "0",
-            "volume": 12.5
+            "volume": 12.5,
+            "top_velocity":3000
             
         },
 

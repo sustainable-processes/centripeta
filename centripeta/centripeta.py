@@ -102,6 +102,7 @@ class Analyzer(Centripeta):
         self.vert_ph = self._mgr.devices['vert_ph']
         self.horz_cond = self._mgr.devices['horz_cond']
         self.vert_cond = self._mgr.devices['vert_cond']
+        self.vert_turb = self._mgr.devices['vert_turb']
         self.a2_fans = self._mgr.devices['a2_fans']
         self.drying_fans = self._mgr.devices['drying_fans']
         self.wheel = self._mgr.devices['analysis_wheel']
@@ -182,6 +183,12 @@ class Analyzer(Centripeta):
         print('pH probe is cleaning')
         time.sleep(10)
         self.vert_ph.home()
+    
+    def turb_test(self):
+        self.vert_turb.home()
+        self.vert_turb.move_to(20000)
+        time.sleep(5)
+        self.vert_turb.home()
 
 def get_all_serial_ports():
     pass
