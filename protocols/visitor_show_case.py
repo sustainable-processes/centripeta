@@ -33,9 +33,25 @@ for i, condition in conditions.iterrows():
 time.sleep(5)
 # explaining the role of robotic arm
 print('robotic arm for vial transfer')
+# take a picture
+import cv2
+camera = cv2.VideoCapture(0)
+
+for i in range(2):
+    return_value, image = camera.read()
+    cv2.imwrite('sample'+str(i)+'.png', image)
+    img = cv2.imread('sample'+str(i)+'.png')
+    cv2.namedWindow('sample'+str(i)+'.png')
+    cv2.imshow('sample'+str(i)+'.png', img)
+    cv2.waitKey (0)
+    a.turn_wheel(n_turns=1)
+del(camera)
+cv2.destroyAllWindows()
+
 a.start_fans(50)
 print('cleaning station is working now')
 a.cond_test()
+a.turn_wheel(n_turns=1)
 a.stop_fans()
 print('Done:)')
 
