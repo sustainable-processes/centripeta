@@ -11,26 +11,49 @@
         "initialize_valve_position": "I"
     },
     "groups": {
-        "cleaning": ["sample", "water", "acetone"]
+        "water": ["water"],
+        "surfactants":["DehytonAB30", "Texapon", "Plantacare818"],
+        "oils": ["CC7BZ", "ArlyponTT"]
     },
     "pumps": {
-        "sample": {
+        "water": {
             "switch": "0",
             "volume": 12.5,
             "top_velocity":3000
             
         },
 
-        "acetone": {
+        "Texapon": {
             "switch": "1",
-            "volume": 5
+            "volume": 5,
+            "top_velocity":3000
             
         },
 
-        "water": {
+        "DehytonAB30": {
             "switch": "2",
+            "volume": 5,
+            "top_velocity":3000
+
+            
+        },
+
+        "Plantacare818": {
+            "switch": "3",
+            "volume": 5,
+            "top_velocity":2000
+            
+        },
+
+        "CC7BZ": {
+            "switch": "4",
             "volume": 1,
-            "top_velocity": 12000
+            "top_velocity": 100
+        },
+        "ArlyponTT": {
+            "switch": "5",
+            "volume": 1,
+            "top_velocity": 500
         }
     }
 }

@@ -21,18 +21,18 @@ a = Analyzer(mgr)
 d = Dispenser(manager=mgr, pump_controller=pumps)
 
 # Read in conditions and run the robot
-conditions = pd.read_csv('conditions/acetone_water_1.csv')
-for i, condition in conditions.iterrows():
-    logging.info("{Dipsensing condition %s"%i)
-    print('sample preparation')
-    d.dispense(pump_name="sample", volume =condition['sample']) 
-    d.dispense(pump_name="acetone", volume=condition['acetone'])
-    d.dispense(pump_name="water", volume=condition['water'])
-    print('next sample')
-    d.turn_wheel(n_turns=1)
-time.sleep(5)
+# conditions = pd.read_csv('conditions/acetone_water_1.csv')
+# for i, condition in conditions.iterrows():
+#     logging.info("{Dipsensing condition %s"%i)
+#     print('sample preparation')
+#     d.dispense(pump_name="sample", volume =condition['sample']) 
+#     d.dispense(pump_name="acetone", volume=condition['acetone'])
+#     d.dispense(pump_name="water", volume=condition['water'])
+#     print('next sample')
+#     d.turn_wheel(n_turns=1)
+# time.sleep(5)
 # explaining the role of robotic arm
-print('robotic arm for vial transfer')
+# print('robotic arm for vial transfer')
 # take a picture
 import cv2
 camera = cv2.VideoCapture(0)
