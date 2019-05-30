@@ -41,7 +41,7 @@
         "Plantacare818": {
             "switch": "3",
             "volume": 5,
-            "top_velocity":2000
+            "top_velocity":3000
             
         },
 
@@ -50,10 +50,36 @@
             "volume": 1,
             "top_velocity": 100
         },
+
         "ArlyponTT": {
             "switch": "5",
             "volume": 1,
-            "top_velocity": 500
+            "top_velocity": 100
+        },
+
+        "DehytonPK45": {
+            "switch": "6",
+            "volume": 5,
+            "top_velocity":3000
+        },
+
+        "DehytonMC": {
+            "switch": "7",
+            "volume": 5,
+            "top_velocity":2000
+
+        },
+
+        "Plantacare2000": {
+            "switch": "8",
+            "volume": 5,
+            "top_velocity":3000
+        },
+
+        "PlantaponLGCsorb": {
+            "switch": "9",
+            "volume": 5,
+            "top_velocity":1000
         }
     }
 }

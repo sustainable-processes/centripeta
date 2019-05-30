@@ -58,7 +58,7 @@ class Dispenser(Centripeta):
         self.pumps = self._pump_controller.pumps 
 
 
-    def dispense(self, pump_name, volume):
+    def dispense(self, pump_name, volume, speed_in=None, speed_out=None):
         """
         Dispenses a single reagent from the pump
 
@@ -66,7 +66,7 @@ class Dispenser(Centripeta):
             name (str): Name of the reagent pump
             volume (int/float): Volume to dispense
         """
-        self.pumps[pump_name].transfer(volume, 'I', 'O')
+        self.pumps[pump_name].transfer(volume, 'I', 'O', speed_in=speed_in, speed_out=speed_out)
         # self.pumps[pump_name].pump(volume, 'I', wait=True)
         # self.pumps[pump_name].deliver(volume, 'O', wait=True)
 
