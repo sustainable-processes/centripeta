@@ -20,7 +20,7 @@ d = Dispenser(manager=mgr, pump_controller=pumps)
 # d.turn_wheel(n_turns=2)
 
 # Read in conditions and run the robot
-conditions = pd.read_csv('conditions/xp_test.csv')
+conditions = pd.read_csv('conditions/Bridge_design/Space-filling_design_0.csv')
 for i, condition in conditions.iterrows():
     logging.info("{Dipsensing condition %s"%i)
     d.dispense(pump_name="Texapon", volume =condition['Texapon'], speed_in=1500) 
