@@ -55,31 +55,6 @@
             "switch": "5",
             "volume": 1,
             "top_velocity": 100
-        },
-
-        "DehytonPK45": {
-            "switch": "6",
-            "volume": 5,
-            "top_velocity":2000
-        },
-
-        "DehytonMC": {
-            "switch": "7",
-            "volume": 5,
-            "top_velocity":2000
-
-        },
-
-        "Plantacare2000": {
-            "switch": "8",
-            "volume": 5,
-            "top_velocity":2000
-        },
-
-        "PlantaponLGCsorb": {
-            "switch": "9",
-            "volume": 5,
-            "top_velocity":800
         }
     }
 }
