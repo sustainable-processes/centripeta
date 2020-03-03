@@ -2,7 +2,7 @@
 
 This is a set of tools for controlling the centripeta robots in publication 'Optimisation of formulations using robotic experiments driven by machine learning DoE'. 
 
-![top-view](https://user-images.githubusercontent.com/18735742/75795699-9b33c800-5d6a-11ea-9955-d6d03a08946a.jpg)
+![top-view](https://user-images.githubusercontent.com/18735742/75795699-9b33c800-5d6a-11ea-9955-d6d03a08946a.jpg| width=48)
 
 This robot contains two parts: sample preparation part and sanple analysis part. A general scheme for the procedure is provided below. The continuous lines represent the materials flow, whereas dashed lines represent the information flow.
 
