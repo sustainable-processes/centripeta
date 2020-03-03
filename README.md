@@ -17,16 +17,46 @@ The easiest way to install centripeta is using pip:
 
 <!-- I will pin the install to a particular release once we are ready to publish-->
 
-### Prerequisites
- To use the code for pH measurement, PicoSDK C libraries will be need to install. For details please refer to Picotech website(https://www.picotech.com/downloads) and their [github repository](https://github.com/picotech/picosdk-python-wrappers)
+ To use the code for pH measurement, the PicoSDK C libraries need to installed. For details, please refer to Picotech website(https://www.picotech.com/downloads) and their [github repository](https://github.com/picotech/picosdk-python-wrappers)
 
 <!-- This will depend on whether we keep the pH measurement part-->
 
 ## Running the experiments
 
-The [protocol directory](https://github.com/sustainable-processes/centripeta/tree/master/protocols) contains the files for the robotic system control.
+Below is a simple example for running the experiments.
 
+```
+from centripeta import Dispenser
+from pycont.controller import MultiPumpController
+from commanduino import CommandManager
+import pandas as pd
 
+#This is the CSV file with the conditions to dispense into the vials
+CONDITIONS_FILE="xp_initial_0.csv"
 
+#Instantiate the communication with the robot
+mgr = CommandManager.from_configfile('platform_config_ports.json')
+pumps = MultiPumpController.from_configfile('pycont_config_less.json')
+d = Dispenser(manager=mgr, pump_controller=pumps)
 
+# Read in conditions and run the robot
+conditions = pd.read_csv(CONDITION_FILE)
+for i, condition in conditions.iterrows():
+    #Dispense each surfactant
+    d.dispense(pump_name="Plantacare818", volume=condition['Plantacare818'], speed_in=1500)
+    d.dispense(pump_name="Texapon", volume =condition['Texapon'], speed_in=1500) 
+    d.dispense(pump_name="DehytonAB30", volume=condition['DehytonAB30'], speed_in=1500)
+    d.dispense(pump_name="ArlyponTT", volume=condition['ArlyponTT'])
+    d.dispense(pump_name="CC7BZ", volume=condition['CC7BZ'])
 
+    #Wait and dispense water
+    time.sleep(10)
+    d.dispense(pump_name="water", volume=condition['water'])
+
+    #Wait and turn the wheel
+    time.sleep(5)
+    d.turn_wheel(n_turns=1)
+    print('finish sample' + 'i')
+print('Done!!')
+```
+To see more examples, take a look at the [protocol directory](https://github.com/sustainable-processes/centripeta/tree/master/protocols), which contains the files for the robotic system control.
