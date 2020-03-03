@@ -125,3 +125,4 @@ dmypy.json
 
 #vs code
 .vscode/
+.DS_Store

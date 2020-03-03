@@ -12,7 +12,7 @@
     },
     "groups": {
         "water": ["water"],
-        "surfactants":["DehytonAB30", "Texapon", "Plantacare818"],
+        "surfactants":["DehytonAB30", "Texapon", "Plantacare818", "DehytonPK45", "Plantacare2000"],
         "oils": ["CC7BZ", "ArlyponTT"]
     },
     "pumps": {
@@ -55,6 +55,18 @@
             "switch": "5",
             "volume": 1,
             "top_velocity": 100
+        },
+
+        "DehytonPK45": {
+            "switch": "6",
+            "volume": 5,
+            "top_velocity":2000
+        },
+
+        "Plantacare2000": {
+            "switch": "8",
+            "volume": 5,
+            "top_velocity":2000
         }
     }
 }

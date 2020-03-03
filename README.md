@@ -2,7 +2,16 @@
 
 This is a set of tools for controlling the centripeta robots. 
 
+## Installation
 
-# Examples
+The easiest way to install centripeta is using pip:
 
-See the protocols folder.  You need to have [poetry](https://poetry.eustace.io/docs/) installed and then run `poetry install` to setup of the environment. After that, you can run any of the scripts using `poetry run python <script_name.py>`
+```pip install -e git+https://github.com/sustainable-processes/centripeta@master#egg=centripeta```
+
+<!-- I will pin the install to a particular release once we are ready to publish-->
+
+## Examples
+
+Example protocols can be found below...
+
+<!--Liwei, I think it would be good to have some code examples here in the README as well as in the protocols folder-->
