@@ -17,7 +17,7 @@ The easiest way to install centripeta is using pip:
 
 <!-- I will pin the install to a particular release once we are ready to publish-->
 
- To use the code for pH measurement, the PicoSDK C libraries need to installed. For details, please refer to Picotech website(https://www.picotech.com/downloads) and their [github repository](https://github.com/picotech/picosdk-python-wrappers)
+ To use the code for pH measurement, the PicoSDK C libraries need to installed. For details, please refer to Picotech website(https://www.picotech.com/downloads) and their [github repository](https://github.com/picotech/picosdk-python-wrappers).
 
 <!-- This will depend on whether we keep the pH measurement part-->
 
