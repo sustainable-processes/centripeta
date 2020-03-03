@@ -22,8 +22,11 @@ The easiest way to install centripeta is using pip:
 
 <!-- This will depend on whether we keep the pH measurement part-->
 
-## Examples
+## Running the experiments
 
-Example protocols can be found below...
+The [protocol directory](https://github.com/sustainable-processes/centripeta/tree/master/protocols) contains the files for the robotic system control.
 
-<!--Liwei, I think it would be good to have some code examples here in the README as well as in the protocols folder-->
+
+
+
+
