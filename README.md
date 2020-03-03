@@ -6,7 +6,7 @@ This is a set of tools for controlling the centripeta robots in publication 'Opt
 
 This robot contains two parts: sample preparation part and sanple analysis part. A general scheme for the procedure is provided below. The continuous lines represent the materials flow, whereas dashed lines represent the information flow.
 
-![image](https://user-images.githubusercontent.com/18735742/75796176-2d3bd080-5d6b-11ea-9f33-63945be6bdff.png = 250x)
+![image](https://user-images.githubusercontent.com/18735742/75796176-2d3bd080-5d6b-11ea-9f33-63945be6bdff.png)
 
 
 ## Installation
