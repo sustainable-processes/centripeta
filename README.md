@@ -25,7 +25,7 @@ The easiest way to install centripeta is using pip:
 
 Below is a simple example for running the experiments.
 
-```
+```python
 from centripeta import Dispenser
 from pycont.controller import MultiPumpController
 from commanduino import CommandManager
