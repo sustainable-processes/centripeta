@@ -1,6 +1,6 @@
 # Centripeta
 
-This is a set of tools for controlling the centripeta robots in publication 'Optimisation of formulations using robotic experiments driven by machine learning DoE'. 
+This is a set of tools for controlling the centripeta robots in the publication "[Optimisation of formulations using robotic experiments driven by machine learning DoE](https://www.cell.com/cell-reports-physical-science/fulltext/S2666-3864(20)30321-0)."
 
 ![top-view](https://user-images.githubusercontent.com/18735742/75795699-9b33c800-5d6a-11ea-9955-d6d03a08946a.jpg)
 
